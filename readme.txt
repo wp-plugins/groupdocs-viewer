@@ -25,3 +25,8 @@ The other way to embed the document is to upload it via this plugin to your grou
 
 Be aware that to upload the document with this plugin to your groupdocs.com account you will have to input its User Id and Private Key. It could be stored in the Plugin Settings.
 
+== Frequently Asked Questions ==
+
+= Are there any specific PHP extensions that should be enabled?  =
+
+cURL extension is required (extension=php_curl.dll)
