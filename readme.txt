@@ -1,17 +1,17 @@
-=== Group Docs Viewer Embedder ===
-Contributors: Sergiy Osypov
-Tags: doc, docx, pdf, group docs
-Author URI: http://www.groupdocs.com
+=== GroupDocs Viewer Embedder ===
+Contributors: GroupDocs Team
+Tags: doc, docx, pdf, ppt, pptx, xls, xlsx, groupdocs
+Author URI: http://groupdocs.com
 Requires at least: 2.8
 Tested up to: 3.4
 Stable tag: trunk
 License: GPLv2
 
-Lets you embed Group Docs Viewer for your documents.
+Lets you embed the GroupDocs Viewer into Wordpress for your documents.
 
 == Description ==
 
-Group Docs Viewer Embedder lets you embed several types of files into your WordPress pages using the Group Docs Viewer - allowing inline viewing (and optional downloading) of the following file types, with no Flash or PDF browser plug-ins required:
+GroupDocs Viewer Embedder lets you embed several types of files into your WordPress pages using the GroupDocs High Fidelity Viewer - allowing inline viewing (and optional downloading) of the following file types, with no Flash or PDF browser plug-ins required: doc, docx, pdf, xls, xlsx, ppt, pptx and other formats
 
 == Installation ==
 
@@ -19,11 +19,11 @@ Group Docs Viewer Embedder lets you embed several types of files into your WordP
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Done.
 
-Upload the documents to your Group Docs account. Use the Group Docs Embedder button in the Visual editor to build the appropriate shortcode by copy&pasting the document groupdocs.com link.
+Upload the documents to your GroupDocs account. Use the GroupDocs Embedder button in the Visual editor to build the appropriate shortcode by copy&pasting the document groupdocs.com link.
 
 The other way to embed the document is to upload it via this plugin to your groupdocs.com account then the shortcode will be automatically generated and inserted to the content of the post.
 
-Be aware that to upload the document with this plugin to your groupdocs.com account you will have to input its User Id and Private Key. It could be stored in the Plugin Settings.
+Be aware that to upload the document with this plugin to your groupdocs.com account you will have to input the  User Id and Private Key, which can be found at the bottom of the profile in the GroupDocs dashboard (click icon in the top right of the header to view the profile). It will then be stored in the Plugin Settings.
 
 == Frequently Asked Questions ==
 
