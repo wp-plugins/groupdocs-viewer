@@ -1,17 +1,22 @@
-=== GroupDocs Viewer Embedder ===
+=== GroupDocs Word, Excel, Powerpoint, PDF Viewer ===
 Contributors: GroupDocs Team
-Tags: doc, docx, pdf, ppt, pptx, xls, xlsx, groupdocs
+Tags: doc, docx, pdf, ppt, pptx, xls, xlsx, groupdocs, powerpoint, excel, word
 Author URI: http://groupdocs.com
 Requires at least: 2.8
 Tested up to: 3.4
 Stable tag: trunk
 License: GPLv2
 
-Lets you embed the GroupDocs Viewer into Wordpress for your documents.
+Lets you embed the GroupDocs Word, Excel, Powerpoint, PDF Viewer into Wordpress for your documents.
 
 == Description ==
 
-GroupDocs Viewer Embedder lets you embed several types of files into your WordPress pages using the GroupDocs High Fidelity Viewer - allowing inline viewing (and optional downloading) of the following file types, with no Flash or PDF browser plug-ins required: doc, docx, pdf, xls, xlsx, ppt, pptx and other formats
+GroupDocs Word, Excel, Powerpoint, PDF Viewer Embedder lets you embed several types of files into your WordPress pages using the GroupDocs High Fidelity Viewer - allowing inline viewing (and optional downloading) of the following file types, with no Flash or PDF browser plug-ins required: 
+
+Adobe Acrobat (PDF)
+Microsoft Word (DOC/DOCX)
+Microsoft PowerPoint (PPT/PPTX)
+Microsoft Excel (XLS/XLSX)
 
 == Installation ==
 
