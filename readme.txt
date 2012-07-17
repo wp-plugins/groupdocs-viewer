@@ -20,7 +20,7 @@ Microsoft Excel (XLS/XLSX)
 
 [GroupDocs Viewer](http://groupdocs.com/apps/viewer/) is an online document viewer that lets you read documents in your browser, regardless of whether you have the software that they were created in. You can view many types to word processing documents (DOC, DOCX, TXT, RTF, ODT), presentations (PPT, PPTX), spreadsheets (XLS, XLSX), portable files (PDF), and image files (JPG, BMP, GIF, TIFF). For each file, you get a high-fidelity rendering, showing the document just as it would if you opened it in the software it was created in. Layout and formatting is retained and you see an exact copy of the original.
 
-GroupDocs Viewer lets you really read the document. You can search text documents, copy text and even embed the document – GroupDocs Viewer and all - in a web page. You can print or download the file from GroupDocs Viewer if you need to work with it offline.
+GroupDocs Viewer lets you really read the document. You can search text documents, copy text and even embed the document - GroupDocs Viewer and all - in a web page. You can print or download the file from GroupDocs Viewer if you need to work with it offline.
 
 = Online Document Viewer =
 There are several benefits to using an [online document viewer](http://groupdocs.com/apps/viewer/ "Online document viewer"),such as the [GroupDocs Viewer](http://groupdocs.com/apps/viewer/). The main one is that it is platform and software independent. No matter  what type of computer or software you have, you can view most common business file formats. You don’t have to install software or go through complicated conversion processes. Just upload the file and look at the content in your browser.
@@ -58,6 +58,9 @@ Be aware that to upload the document with this plugin to your groupdocs.com acco
 == Screenshots ==
 
 1. Here's a screenshot of installed plugin within the editor
+2. Here's a screenshot of how to get your document link for insertion into the GroupDocs Embedder dialog
+3. Here's a screenshot of the GroupDocs Embedder Dialog
+
 
 == Frequently Asked Questions ==
 
@@ -71,6 +74,9 @@ For further help you may choose any of following options:
 cURL extension is required (extension=php_curl.dll)
 
 == Changelog ==
+
+= 1.2 = 
+* Fixed issue relating to security warning in Chrome
 
 = 1.1 = 
 * Fixed 2 path related bugs

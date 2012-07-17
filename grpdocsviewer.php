@@ -27,7 +27,7 @@ function grpdocs_getdocument($atts) {
 	$guid = grpdocs_getGuid($file);
 
 //	$code = "<iframe src='https://dev-apps.groupdocs.com/document-viewer/embed/{$guid}' frameborder='0' width='600' height='700'></iframe>";
-	$code = "<iframe src='https://apps.groupdocs.com/document-viewer/embed/{$guid}' frameborder='0' width='600' height='700'></iframe>";
+	$code = "<iframe src='http://apps.groupdocs.com/document-viewer/embed/{$guid}' frameborder='0' width='600' height='700'></iframe>";
 
 
 	$code = str_replace("%W%", $width, $code);
