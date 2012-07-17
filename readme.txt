@@ -18,6 +18,8 @@ Microsoft Word (DOC/DOCX)
 Microsoft PowerPoint (PPT/PPTX)
 Microsoft Excel (XLS/XLSX)
 
+Updated to v1.1 - Fixed 2 path related bugs
+
 == Installation ==
 
 1. Upload the entire `groupdocs-embedder` folder to the `/wp-content/plugins/` directory.
