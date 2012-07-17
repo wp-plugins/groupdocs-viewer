@@ -1,12 +1,12 @@
 <?php
 
 /*
-Plugin Name: Group Docs Viewer Embedder
+Plugin Name: GroupDocs Viewer Embedder
 Plugin URI: http://www.groupdocs.com/
 Description: Lets you embed Group Docs in a web page using the Group Docs Viewer (no Flash or PDF browser plug-ins required).
-Author: Sergiy Osypov <Sergiy.Osypov@groupdocs.com>
+Author: GroupDocs Team <support@groupdocs.com>
 Author URI: http://www.groupdocs.com/
-Version: 1.0
+Version: 1.1
 License: GPLv2
 */
 
@@ -23,7 +23,7 @@ function grpdocs_getdocument($atts) {
 		'version' => 1,
 	), $atts));
 
-	                                                                                                            
+
 	$guid = grpdocs_getGuid($file);
 
 //	$code = "<iframe src='https://dev-apps.groupdocs.com/document-viewer/embed/{$guid}' frameborder='0' width='600' height='700'></iframe>";
@@ -61,13 +61,13 @@ add_action('admin_init','grpdocs_mce_addbuttons');
 add_action('admin_menu', 'grpdocs_option_page');
 function grpdocs_option_page() {
 	global $grpdocs_settings_page;
-	
+
 	$grpdocs_settings_page = add_options_page('Group Docs', 'Group Docs', 'manage_options', basename(__FILE__), 'grpdocs_options');
 
 }
 function grpdocs_options() {
 	if ( function_exists('current_user_can') && !current_user_can('manage_options') ) die(t('An error occurred.'));
 	if (! user_can_access_admin_page()) wp_die('You do not have sufficient permissions to access this page');
-	
-	require(ABSPATH. '/wp-content/plugins/groupdocs-embedder/options.php');
+
+	require(ABSPATH. 'wp-content\plugins\groupdocs-embedder\options.php');
 }

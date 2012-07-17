@@ -1,6 +1,6 @@
 <?php
 
-if ( ! defined( 'GRPDOCS_PLUGIN_URL' ) )  define( 'GRPDOCS_PLUGIN_URL', WP_PLUGIN_URL . '/groupdocs-embedder');
+if ( ! defined( 'GRPDOCS_PLUGIN_URL' ) )  define( 'GRPDOCS_PLUGIN_URL', WP_PLUGIN_URL . '/groupdocs-viewer');
  
 function grpdocs_getGuid($link = "https://apps.groupdocs.com/document-viewer/17b5b1da8d3227b12a28e1780e2beab76e760ecc5f9f5e6fc8594edc189eb786/1") {
     preg_match('/([0-9a-f]){64}/', $link, $matches);
