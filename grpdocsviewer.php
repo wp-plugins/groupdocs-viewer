@@ -3,7 +3,7 @@
 /*
 Plugin Name: GroupDocs Viewer Embedder
 Plugin URI: http://www.groupdocs.com/
-Description: Lets you embed Group Docs in a web page using the Group Docs Viewer (no Flash or PDF browser plug-ins required).
+Description: Lets you embed PPT, PPTX, XLS, XLSX, DOC, DOCX, PDF and many other formats from your GroupDocs acount in a web page using the GroupDocs Embedded Viewer (no Flash or PDF browser plug-ins required).
 Author: GroupDocs Team <support@groupdocs.com>
 Author URI: http://www.groupdocs.com/
 Version: 1.1
@@ -62,7 +62,7 @@ add_action('admin_menu', 'grpdocs_option_page');
 function grpdocs_option_page() {
 	global $grpdocs_settings_page;
 
-	$grpdocs_settings_page = add_options_page('Group Docs', 'Group Docs', 'manage_options', basename(__FILE__), 'grpdocs_options');
+	$grpdocs_settings_page = add_options_page('GroupDocs', 'GroupDocs', 'manage_options', basename(__FILE__), 'grpdocs_options');
 
 }
 function grpdocs_options() {
