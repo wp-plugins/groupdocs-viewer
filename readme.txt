@@ -23,36 +23,26 @@ Microsoft Excel (XLS/XLSX)
 GroupDocs Viewer lets you really read the document. You can search text documents, copy text and even embed the document – GroupDocs Viewer and all - in a web page. You can print or download the file from GroupDocs Viewer if you need to work with it offline.
 
 
-* [Online Document Viewer](http://groupdocs.com/apps/viewer/ "Online document viewer")
-
+= [Online Document Viewer](http://groupdocs.com/apps/viewer/ "Online document viewer") =
 There are several benefits of having access to a document viewer like [GroupDocs Viewer](http://groupdocs.com/apps/viewer/). The main one is that it is platform and software independent. No matter what type of computer or software you have, you can view most common business file formats. You don’t have to install software or go through complicated conversion processes. Just upload the file and look at the content in your browser.
 
 GroupDocs Viewer can be used as a [Microsoft Word viewer](http://groupdocs.com/apps/viewer/) (A Word viewer is a program that lets you read Microsoft Word documents). People who don't have the most recent version of Microsoft Office, or who don't have Office at all, can still view Word DOCX files through GroupDocs Viewer. There no need to convert the document, or install an extension. The same applies to PDF files: GroupDocs viewer is a Word viewer and a PDF reader all in one.
 
 GroupDocs Viewer helps you find what you're looking for. It has an inbuilt search function so that you can find specific words of phrases quickly. Navigation is easy: navigate using thumbnails or go to a specific page. GroupDocs Viewer also lets you print the document, or download it to your computer, so that you can read it offline.
 
-* Embedding Documents on Your Website
-
+= Embedding Documents on Your Website =
 GroupDocs Viewer lets you embed a document on your website so that anyone who visits can read it with GroupDocs Viewer. You embed the document with our online document viewer. Just like you can view any document on GroupDocs, any of your website visitors can read your documents on your website. They don’t need the software that the document was created in, they don’t need to download and install software. They just click and read.
 
 The GroupDocs Viewer online document viewer is easy to use and looks professional. It is as easy to embed as a YouTube film or Vimeo video. Just copy, paste, publish and go.
 
-
-* [View PDF, DOC, DOCX, PPT, PPTX, XLS](http://groupdocs.com/apps/viewer/) and many other documents in your browser without installing software.
-
+= [View PDF, DOC, DOCX, PPT, PPTX, XLS](http://groupdocs.com/apps/viewer/) and many other documents in your browser without installing software. =
 If you have Microsoft Word 2003 (DOC), you'll find it difficult to view Microsoft Word 2010 documents (DOCX). Although the compressed file format (DOCX) has been around for a while, not everyone can read it. You can overcome this hurdle if you use GroupDocs Viewer as it's a perfect Word viewer. The same is true for a lot of other formats. GroupDocs Viewer overcomes that problem by taking documents in all kinds of formats and showing them on screen. You don't need to have the program that created a document to read it. This means that you can share documents without worrying about what programs your colleagues have. Through GroupDocs Viewer, you can view almost any document and see it the way it was meant to look.
 
-
-* Search for text in a document. Select text from documents you're viewing quickly and easily and copy it to the clipboard.
-
+= Search for text in a document. Select text from documents you're viewing quickly and easily and copy it to the clipboard. =
 Remember a paragraph you wrote that perfectly sums up your company objectives? Search the document to find the text and then copy it. You can re-use text from different documents, all of them stored online. If you have boilerplate - paragraphs and descriptions that you re-use a lot - you can put them into a document and share it with your colleagues. Now everyone has access to the same text, and your look consistent and professional. When boilerplate is stored and shared online, you can make changes locally and share them with your colleagues so that everyone works from the same version.
 
-
-* Move between the pages of your document quickly with our thumbnail page preview.
-
+= Move between the pages of your document quickly with our thumbnail page preview. =
 If you're familiar with PDF files, or Microsoft Word, you'll be used to navigating documents using thumbnails. Each page in a document is shown as a small picture to give you an overview of the content. To read a page, click it. Thumbnails make navigating any document easy. You can find a particular image or the next chapter of a book without having to know what page it is on.
-
-Updated to v1.1 - Fixed 2 path related bugs
 
 == Installation ==
 
@@ -71,3 +61,11 @@ Be aware that to upload the document with this plugin to your groupdocs.com acco
 = Are there any specific PHP extensions that should be enabled?  =
 
 cURL extension is required (extension=php_curl.dll)
+
+== Changelog ==
+
+= 1.1 = 
+* Fixed 2 path related bugs
+
+= 1.0 =
+* Initial release
