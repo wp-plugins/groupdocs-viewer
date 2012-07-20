@@ -1,9 +1,9 @@
 === GroupDocs Word, Excel, Powerpoint, PDF Viewer ===
 Contributors: GroupDocs Team
-Tags: doc, docx, pdf, ppt, pptx, xls, xlsx, groupdocs, powerpoint, excel, word
+Tags: doc, docx, pdf, ppt, pptx, xls, xlsx, groupdocs, powerpoint, excel, word, acrobat
 Author URI: http://groupdocs.com
 Requires at least: 2.8
-Tested up to: 3.4
+Tested up to: 3.4.1
 Stable tag: trunk
 License: GPLv2
 
@@ -76,11 +76,13 @@ cURL extension is required (extension=php_curl.dll)
 
 == Changelog ==
 
+= 1.2.1=
+* Updated compatibility, and tags
+
 = 1.2 = 
 * Fixed a bug relating to url encoding in the file variable
 * Fixed issue relating to security warning in Chrome
  
-
 = 1.1 = 
 * Fixed 2 path related bugs
 

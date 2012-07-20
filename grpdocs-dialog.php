@@ -46,12 +46,12 @@ error_reporting(E_ALL | E_STRICT);
 	<span id="uri-note"></span></td>
   </tr>
   <tr>
-    <td align="right" class="gray dwl_gray"><strong>User Id</strong><br />from your groupdocs.com account</td>
+    <td align="right" class="gray dwl_gray"><strong>Client Id</strong><br />from your groupdocs.com account</td>
     <td valign="top"><input name="userId" type="text" class="opt dwl" id="userId" style="width:200px;" value="<?php echo get_option('userId'); ?>" /><br/>
 	<span id="uri-note"></span></td>
   </tr>
   <tr>
-    <td align="right" class="gray dwl_gray"><strong>Private Key</strong><br />from your groupdocs.com account</td>
+    <td align="right" class="gray dwl_gray"><strong>API Key</strong><br />from your groupdocs.com account</td>
     <td valign="top"><input name="privateKey" type="text" class="opt dwl" id="privateKey" style="width:200px;" value="<?php echo get_option('privateKey'); ?>" /><br/>
 	<span id="uri-note"></span></td>
   </tr>
