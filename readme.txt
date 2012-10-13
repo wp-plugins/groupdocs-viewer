@@ -60,7 +60,7 @@ Be aware that to upload the document with this plugin to your groupdocs.com acco
 1. Here's a screenshot of installed plugin within the editor
 2. Here's a screenshot of how to get your document link for insertion into the GroupDocs Embedder dialog
 3. Here's a screenshot of the GroupDocs Embedder Dialog
-4. Here's a screenshot of the GroupDocs Embedded Viewer in a Wordpress blog
+4. Here's a screenshot of the GroupDocs Embedded Viewer in a Wordpress blog page
 
 
 == Frequently Asked Questions ==
