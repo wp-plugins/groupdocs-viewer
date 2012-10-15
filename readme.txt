@@ -57,15 +57,10 @@ Be aware that to upload the document with this plugin to your groupdocs.com acco
 
 == Screenshots ==
 
-<<<<<<< .mine
+
 1. Here's a screenshot of how to get your document link for insertion into the GroupDocs Annotation Embedder dialog
 2. Here's a screenshot of the GroupDocs Annotation Embedder in a Wordpress blog
-=======
-1. Here's a screenshot of installed plugin within the editor
-2. Here's a screenshot of how to get your document link for insertion into the GroupDocs Embedder dialog
-3. Here's a screenshot of the GroupDocs Embedder Dialog
-4. Here's a screenshot of the GroupDocs Embedded Viewer in a Wordpress blog page
->>>>>>> .r612572
+
 
 
 == Frequently Asked Questions ==
