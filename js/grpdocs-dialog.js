@@ -1,10 +1,20 @@
+(function($) {
+$(function() {
+
+  $('ul.tabs').delegate('li:not(.current)', 'click', function() {
+    $(this).addClass('current').siblings().removeClass('current')
+      .parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
+  })
+
+})
+})(jQuery)
+
 tinyMCEPopup.requireLangPack();
 	
 var GrpdocsInsertDialog = {
 	init : function() {
 		var f = document.forms[0];
         var shortcode;
-		
 				jQuery('.diy').click(function(){
 				// diy option selected
 					var dis = jQuery('.opt').attr('disabled');
