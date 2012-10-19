@@ -151,7 +151,7 @@ define("UPLOAD_ERR_EMPTY",5);
 		$result = $api->Upload($userId, $name, "uploaded", "file://$tmp_name");
 
 		echo"<script>
-			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsannotation file=\"" . @$result->result->guid . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\"]');
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\"]');
 			tinyMCEPopup.close();</script>";
 		die;
 	}

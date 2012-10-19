@@ -49,7 +49,7 @@ function loadFileTree($){
 }
 
 function show_server_error($) {
-	var message = "Uh oh, looks like we are currently experiencing difficulties with our API, please be so kind as to drop an email to <a href='mailto:support@groupdocs.com'>support@groupdocs.com</a> to let them know, thanks or <a href='#' onclick='loadFileTree($);return false'>click here</a> to try again.";
+	var message = "Uh oh, looks like we are currently experiencing difficulties with our API, please be so kind as to drop an email to <a href='mailto:support@groupdocs.com'>support@groupdocs.com</a> to let them know, thanks or <a href='#' onclick='loadFileTree(jQuery);return false'>click here</a> to try again.";
 	$('#groupdocsBrowserInner').append($("<div class='aui-message warning'>" + message + "</div>"));
 }
 
