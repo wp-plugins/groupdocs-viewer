@@ -76,6 +76,10 @@ cURL extension is required (extension=php_curl.dll)
 
 == Changelog ==
 
+= 1.3.2=
+* Fixed "Paste link" tab - renamed to "Paste GUID"
+* Cleaned code.
+
 = 1.3.1=
 * Fixed bug with upload file's shortcode.
 * Fixed bug with reload link.

@@ -6,7 +6,7 @@ Plugin URI: http://www.groupdocs.com/
 Description: Lets you embed PPT, PPTX, XLS, XLSX, DOC, DOCX, PDF and many other formats from your GroupDocs acount in a web page using the GroupDocs Embedded Viewer (no Flash or PDF browser plug-ins required).
 Author: GroupDocs Team <support@groupdocs.com>
 Author URI: http://www.groupdocs.com/
-Version: 1.3.1
+Version: 1.3.2
 License: GPLv2
 */
 
@@ -23,11 +23,9 @@ function grpdocs_getdocument($atts) {
 		'version' => 1,
 	), $atts));
 
-
 	$guid = grpdocs_getGuid(urlencode($file));
 
 	$code = "<iframe src='http://apps.groupdocs.com/document-viewer/embed/{$guid}' frameborder='0' width='{$width}' height='{$height}'></iframe>";
-
 
 	$code = str_replace("%W%", $width, $code);
 	$code = str_replace("%H%", $height, $code);
@@ -37,11 +35,7 @@ function grpdocs_getdocument($atts) {
 	$code = str_replace("%B%", $download, $code);
 	$code = str_replace("%GUID%", $guid, $code);
 
-
-
-
 	return $code;
-
 }
 
 //activate shortcode

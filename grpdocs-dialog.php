@@ -52,7 +52,7 @@ error_reporting(E_ALL | E_STRICT);
 <ul class="tabs">
 	<li class="current">Browse &amp; Embed</li>
 	<li>Upload &amp; Embed</li>
-	<li>Paste Link</li>
+	<li>Paste GUID</li>
 </ul>
 
 <div class="box visible">
@@ -76,7 +76,7 @@ error_reporting(E_ALL | E_STRICT);
 
 <div class="box">
  
-  <strong>Document Link</strong><br />
+  <strong>Document Id (GUID)</strong><br />
   <input name="url" type="text" class="opt dwl" id="url" style="width:200px;" /><br/>
   <span id="uri-note"></span>
   
@@ -109,12 +109,12 @@ error_reporting(E_ALL | E_STRICT);
 </body>
 </html>
 <?php
-if(!empty($_POST) && !empty($_FILES)) {
+if (!empty($_POST) && !empty($_FILES)) {
 
 $file = $_FILES['file'];
 $error_text = true; // Show text or number
 define("UPLOAD_ERR_EMPTY",5);
-   if($file['size'] == 0 && $file['error'] == 0){
+   if ($file['size'] == 0 && $file['error'] == 0){
      $file['error'] = 5;
    }
   $upload_errors = array(
@@ -131,7 +131,7 @@ define("UPLOAD_ERR_EMPTY",5);
    // error: report what PHP says went wrong
    $err = ($error_text) ? $upload_errors[$file['error']] : $file['error'] ;
 
-   if($file['error'] !== 0) {
+   if ($file['error'] !== 0) {
 		echo "<div class='red'>" . $err . "</div>";
 	} else {
 	
