@@ -16,7 +16,7 @@
 			ed.addButton('grpdocs', {
 				title : 'GroupDocs Embedder',
 				cmd : 'mceGrpdocs',
-				image : url + '/../images/grpdocs-button.gif'
+				image : url + '/../images/grpdocs-button.png'
 			});
 			ed.onNodeChange.add
 				(function(ed,cm,n) {
