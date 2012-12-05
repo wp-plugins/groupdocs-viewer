@@ -25,7 +25,7 @@ function grpdocs_getdocument($atts) {
 
 	$guid = grpdocs_getGuid(urlencode($file));
 
-	$code = "<iframe src='http://apps.groupdocs.com/document-viewer/embed/{$guid}' frameborder='0' width='{$width}' height='{$height}'></iframe>";
+	$code = "<iframe src='http://apps.groupdocs.com/document-viewer/embed/{$guid}?&referer=wordpress/3.4.2' frameborder='0' width='{$width}' height='{$height}'></iframe>";
 
 	$code = str_replace("%W%", $width, $code);
 	$code = str_replace("%H%", $height, $code);
