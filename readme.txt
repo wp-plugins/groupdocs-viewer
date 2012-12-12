@@ -49,7 +49,7 @@ If youre familiar with PDF files, or Microsoft Word, youll be used to navigating
 2. Activate the plugin through the `Plugins` menu in WordPress.
 3. Done.
 
-Upload the documents to your GroupDocs account. Use the GroupDocs Embedder button in the Visual editor to build the appropriate shortcode by copy&pasting the document groupdocs.com link.
+Upload the documents to your GroupDocs account. Use the GroupDocs Viewer Embedder button in the Visual editor to build the appropriate shortcode by copy&pasting the document groupdocs.com link.
 
 The other way to embed the document is to upload it via this plugin to your groupdocs.com account then the shortcode will be automatically generated and inserted to the content of the post.
 
@@ -76,8 +76,12 @@ cURL extension is required (extension=php_curl.dll)
 
 == Changelog ==
 
+= 1.3.3 =
+* Updated titles.
+* Fix the bug of repeating error message when no private or client keys.
+
 = 1.3.2 =
-* Fixed "Paste link" tab - renamed to "Paste GUID"
+* Fixed "Paste link" tab - renamed to "Paste GUID".
 * Cleaned code.
 
 = 1.3.1 =
@@ -91,14 +95,14 @@ cURL extension is required (extension=php_curl.dll)
 * New tabs view.
 
 = 1.2.1 =
-* Updated compatibility, and tags
+* Updated compatibility, and tags.
 
 = 1.2 = 
-* Fixed a bug relating to url encoding in the file variable
-* Fixed issue relating to security warning in Chrome
+* Fixed a bug relating to url encoding in the file variable.
+* Fixed issue relating to security warning in Chrome.
  
 = 1.1 = 
-* Fixed 2 path related bugs
+* Fixed 2 path related bugs.
 
 = 1.0 =
-* Initial release
+* Initial release.

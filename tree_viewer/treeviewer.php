@@ -3,7 +3,7 @@
 require_once('../bootstrap.php');
 
 if( empty($_GET['private_key']) || empty($_GET['user_id']) ) {
-	echo "ERROR: No private key and/or user id";
+	//echo "ERROR: No private key and/or user id";
 	exit();
 }
 

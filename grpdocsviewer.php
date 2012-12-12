@@ -55,7 +55,7 @@ add_action('admin_menu', 'grpdocs_option_page');
 function grpdocs_option_page() {
 	global $grpdocs_settings_page;
 
-	$grpdocs_settings_page = add_options_page('GroupDocs', 'GroupDocs', 'manage_options', basename(__FILE__), 'grpdocs_options');
+	$grpdocs_settings_page = add_options_page('GroupDocs Viewer', 'GroupDocs Viewer', 'manage_options', basename(__FILE__), 'grpdocs_options');
 
 }
 function grpdocs_options() {

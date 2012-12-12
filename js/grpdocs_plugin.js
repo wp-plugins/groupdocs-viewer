@@ -14,7 +14,7 @@
 				)}
 			);
 			ed.addButton('grpdocs', {
-				title : 'GroupDocs Embedder',
+				title : 'GroupDocs Viewer Embedder',
 				cmd : 'mceGrpdocs',
 				image : url + '/../images/grpdocs-button.png'
 			});
@@ -28,7 +28,7 @@
 		},
 		getInfo : function() { 
 			return { 
-				longname : 'GroupDocs Embedder',
+				longname : 'GroupDocs Viewer Embedder',
 				author : 'Sergiy Osypov',
 				authorurl : 'http://www.groupdocs.com',
 				infourl : 'http://www.groupdocs.com',

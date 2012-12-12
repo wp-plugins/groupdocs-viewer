@@ -10,7 +10,7 @@ error_reporting(E_ALL | E_STRICT);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>GroupDocs Embedder</title>
+	<title>GroupDocs Viewer Embedder</title>
 	<script type="text/javascript" src="js/jquery-1.5.min.js"></script>
 	<script type="text/javascript" src="js/tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="js/grpdocs-dialog.js"></script>
