@@ -75,6 +75,8 @@ For further help you may choose any of following options:
 cURL extension is required (extension=php_curl.dll)
 
 == Changelog ==
+= 1.3.5 =
+* Update GroupDocs SDK.
 
 = 1.3.4 =
 * Update tracking parameter

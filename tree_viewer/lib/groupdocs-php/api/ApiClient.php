@@ -1,11 +1,19 @@
 <?php
 /**
+ * @version 1.3 - GroupDocs Viewer Pulgin
+ * @package plugins
+ * @copyright Copyright (C) 2012 GroupDocs. All rights reserved.
+ * @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+/**
  * 	Wordnik.com's Swagger generic API client. This client handles the client-
  * 	server communication, and is invariant across implementations. Specifics of
  *	the methods and models for each application are generated from the Swagger
  *	templates.
  */
 
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
 
 /* Autoload the model definition files */
 /**
@@ -15,6 +23,7 @@
  */
 function swagger_autoloader($className) {
 	$currentDir = substr(__FILE__, 0, strrpos(__FILE__, DIRECTORY_SEPARATOR));
+	
 	if (file_exists($currentDir . DIRECTORY_SEPARATOR . $className . '.php')) {
 		include $currentDir . DIRECTORY_SEPARATOR . $className . '.php';
 	} elseif (file_exists($currentDir . DIRECTORY_SEPARATOR . 'models' . DIRECTORY_SEPARATOR . $className . '.php')) {
@@ -44,29 +53,8 @@ class DefaultRequestSigner implements RequestSigner {
 
 class APIClient {
 	
-	private static $packageInfo;
-	
-	public static function getPackageInfo(){
-		if(is_null(self::$packageInfo)){
-			$filename = dirname(__FILE__)."/composer.json";
-			if(!file_exists($filename)){
-				$filename = dirname(__FILE__)."/../composer.json";
-			}
-			
-			$json = file_get_contents($filename);
-			$jsonArray = json_decode($json, true);
-			self::$packageInfo = array();
-			if(is_array($jsonArray)){
-				self::$packageInfo['version'] = $jsonArray['version'];
-				self::$packageInfo['name'] = $jsonArray['name'];
-				$pos = strpos(self::$packageInfo['name'], "/");
-				if($pos !== false){
-					self::$packageInfo['name'] = substr(self::$packageInfo['name'], $pos + 1);
-			  	}
-			}
-		}
-		return self::$packageInfo;
-	}
+	const PACKAGE_NAME = "groupdocs-php";
+	const PACKAGE_VERSION = "1.3-dev";
 
 	public static $POST = "POST";
 	public static $GET = "GET";
@@ -78,8 +66,7 @@ class APIClient {
 	 */
 	function __construct($requestSigner = null) {
 		$this->signer = $requestSigner == null ? new DefaultRequestSigner() : $requestSigner;
-		$info = self::getPackageInfo();
-		$this->headers = array("Groupdocs-Referer" => $info["name"]."/".$info["version"]);
+		$this->headers = array("Groupdocs-Referer" => self::PACKAGE_NAME."/".self::PACKAGE_VERSION);
 		$this->debug = false;
 	}
 
@@ -121,7 +108,7 @@ class APIClient {
 
 		} else if ($postData instanceof FileStream) {
 			$isFileUpload = true;
-			$headers[] = "Content-type: application/octet-stream";
+			$headers[] = "Content-type: ". $postData->getContentType();
 			$headers[] = "Content-Length: ". $postData->getSize();
 
 		} else if (is_object($postData) or is_array($postData)) {
@@ -148,11 +135,11 @@ class APIClient {
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
-		if (! empty($queryParams)) {
-			$url = ($url . '?' . http_build_query($queryParams));
-		}
-
-		if ($method == self::$POST) {
+		if ($method == self::$GET) {
+			if (! empty($queryParams)) {
+				$url = ($url . '?' . http_build_query($queryParams));
+			}
+		} else if ($method == self::$POST) {
 			if($isFileUpload){
 				curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
 				curl_setopt($curl, CURLOPT_TIMEOUT, 0);
@@ -169,6 +156,8 @@ class APIClient {
 		} else if ($method == self::$DELETE) {
 			curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "DELETE");
 			curl_setopt($curl, CURLOPT_POSTFIELDS, $postData);
+		} else {
+			throw new Exception('Method ' . $method . ' is not recognized.');
 		}
 
 		$url = self::encodeURI($this->signer->signUrl($url));
@@ -294,6 +283,7 @@ class APIClient {
 
 		foreach ($object as $property => $value) {
 
+			// Need to handle possible pluralization differences
 			$true_property = $property;
 
 			if (! property_exists($class, $true_property)) {
@@ -301,10 +291,15 @@ class APIClient {
 					$true_property = ucfirst($property);
 				} else if (property_exists($class, lcfirst($property))) {
 					$true_property = lcfirst($property);
+				} else if (substr($property, -1) == 's') {
+					$true_property = substr($property, 0, -1);
+					if (! property_exists($class, $true_property)) {
+						trigger_error("class $class has no property $property"
+							. " or $true_property", E_USER_WARNING);
+					}
 				} else {
-					// trigger_error("class $class has no property $property", E_USER_WARNING);
-					// ignore newly added attributes
-					break;
+					trigger_error("class $class has no property $property",
+						E_USER_WARNING);
 				}
 			}
 
