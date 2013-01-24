@@ -76,6 +76,9 @@ cURL extension is required (extension=php_curl.dll)
 
 == Changelog ==
 
+= 1.3.4 =
+* Update tracking parameter
+
 = 1.3.3 =
 * Updated titles.
 * Fix the bug of repeating error message when no private or client keys.
