@@ -108,6 +108,7 @@ error_reporting(E_ALL | E_STRICT);
 
 </body>
 </html>
+
 <?php
 if (!empty($_POST) && !empty($_FILES)) {
 
@@ -130,30 +131,30 @@ define("UPLOAD_ERR_EMPTY",5);
   );
    // error: report what PHP says went wrong
    $err = ($error_text) ? $upload_errors[$file['error']] : $file['error'] ;
-
    if ($file['error'] !== 0) {
 		echo "<div class='red'>" . $err . "</div>";
 	} else {
-	
-		include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/api/APIClient.php');
-		include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/api/StorageAPI.php');
+
+		include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/APIClient.php');
+    	include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/StorageAPI.php');
+    	include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/GroupDocsRequestSigner.php');
+		include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/FileStream.php');
 
 		$uploads_dir = dirname(__FILE__);
 
 		$tmp_name = $_FILES["file"]["tmp_name"];
 		$name = $_FILES["file"]["name"];
-		
+		$fs = FileStream::fromFile($tmp_name);
 
-		$privateKey = trim($_POST['privateKey']);
-		$userId = trim($_POST['userId']);
-		$apiClient = new APIClient($privateKey, "https://api.groupdocs.com/v2.0");
-		$api = new StorageAPI($apiClient);
-		$result = $api->Upload($userId, $name, "uploaded", "file://$tmp_name");
 
+		$signer = new GroupDocsRequestSigner(trim($_POST['privateKey']));
+    	$apiClient = new APIClient($signer);
+    	$api = new StorageApi($apiClient);
+
+		$result = $api->Upload($_POST['userId'], $name, 'uploaded', $fs);
 		echo"<script>
 			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\"]');
 			tinyMCEPopup.close();</script>";
 		die;
 	}
 }
-
