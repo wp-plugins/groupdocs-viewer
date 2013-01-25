@@ -3,12 +3,13 @@
 require_once('../bootstrap.php');
 
 if( empty($_GET['private_key']) || empty($_GET['user_id']) ) {
-	//echo "ERROR: No private key and/or user id";
+	echo "ERROR: No private key and/or user id";
 	exit();
 }
 
-	include_once(dirname(__FILE__) . '/lib/groupdocs-php/api/APIClient.php');
-    include_once(dirname(__FILE__) . '/lib/groupdocs-php/api/StorageAPI.php');
+	include_once(dirname(__FILE__) . '/lib/groupdocs-php/APIClient.php');
+    include_once(dirname(__FILE__) . '/lib/groupdocs-php/StorageAPI.php');
+    include_once(dirname(__FILE__) . '/lib/groupdocs-php/GroupDocsRequestSigner.php');
 
     $path = $_POST['dir'];
     if ($path == NULL || $path == "/") {
