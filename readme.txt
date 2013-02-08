@@ -55,6 +55,8 @@ The other way to embed the document is to upload it via this plugin to your grou
 
 Be aware that to upload the document with this plugin to your groupdocs.com account you will have to input the  User Id and Private Key, which can be found at the bottom of the profile in the GroupDocs dashboard (click icon in the top right of the header to view the profile). It will then be stored in the Plugin Settings.
 
+
+
 == Screenshots ==
 
 
