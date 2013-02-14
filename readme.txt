@@ -79,6 +79,9 @@ cURL extension is required (extension=php_curl.dll)
 
 == Changelog ==
 
+= 1.3.7 =
+* Fix bug with PHP Warning.
+
 = 1.3.6 =
 * Fixed a bug with pop-up window.
 
