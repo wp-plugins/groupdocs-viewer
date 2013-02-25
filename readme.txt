@@ -5,7 +5,7 @@ Author URI: http://groupdocs.com
 Requires at least: 2.8
 Tested up to: 3.5.0
 Stable tag: trunk
-License: GPLv2
+License: GPLv2 
 
 Lets you embed the GroupDocs Word, Excel, Powerpoint, PDF Viewer into Wordpress for your documents.
 
@@ -75,7 +75,7 @@ For further help you may choose any of following options:
 
 * You can also contact us by various means as mentioned on our [Contact Us](http://groupdocs.com/about/contact/) page.
 
-= Are there any specific PHP extensions that should be enabled?  =
+= Are there any specific PHP extensions that should be enabled? =
 
 cURL extension is required (extension=php_curl.dll)
 
@@ -95,7 +95,7 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 * Update GroupDocs SDK.
 
 = 1.3.4 =
-* Update tracking parameter
+* Update tracking parameter.
 
 = 1.3.3 =
 * Updated titles.
