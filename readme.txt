@@ -62,7 +62,6 @@ Be aware that to upload the document with this plugin to your groupdocs.com acco
 
 == Screenshots ==
 
-
 1. Here's a screenshot of how to get your document link for insertion into the GroupDocs Viewer Embedder dialog
 2. Here's a screenshot of the GroupDocs Viewer Embedder in a Wordpress blog
 
@@ -71,6 +70,7 @@ Be aware that to upload the document with this plugin to your groupdocs.com acco
 == Frequently Asked Questions ==
 
 = How can I get detailed help =
+
 For further help you may choose any of following options:
 
 * You can also contact us by various means as mentioned on our [Contact Us](http://groupdocs.com/about/contact/) page.
