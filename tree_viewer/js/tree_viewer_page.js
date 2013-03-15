@@ -30,7 +30,8 @@ function loadFileTree($){
 						e.preventDefault();
 						var height = parseInt($('#height').val());
 						var width =  parseInt($('#width').val());
-						$('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" width="' + width + '" height="' +  height + '"]');
+						var protocol = $("input[@name'protocol']:checked").val()
+						$('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" width="' + width + '" height="' +  height + '" protocol="' + protocol + '"]');
 					})
 				}
 			});
@@ -41,6 +42,7 @@ function loadFileTree($){
 				loadFileTree($);
 			}
 			else {
+				console.log(response);
 				show_server_error($);
 			}
 		}

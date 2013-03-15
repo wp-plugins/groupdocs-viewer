@@ -84,6 +84,9 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 == Changelog ==
 
+= 1.3.8 =
+* Added http/https protocol choosing.
+
 = 1.3.7 =
 * Fix bug with PHP Warning.
 

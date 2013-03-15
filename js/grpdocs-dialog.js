@@ -54,6 +54,10 @@ var GrpdocsInsertDialog = {
 				jQuery('#url').blur(function(){
 					update_sc();
 				});
+				jQuery("input[name='protocol']").change(function(){
+					update_sc();
+				});	
+
 		
 		function update_sc() {
 			 shortcode = 'grpdocsview';
@@ -69,6 +73,10 @@ var GrpdocsInsertDialog = {
 				}
 				if (( jQuery('#width').val() !=0 ) & ( jQuery('#width').val() ) !=null) {
 					shortcode = shortcode + '  width="'+jQuery('#width').val()+'"';
+				}
+
+				if ( jQuery("input[@name'protocol']:checked").val() ) {
+					shortcode = shortcode + '  protocol="'+jQuery('input[@name\'protocol\']:checked').val()+'"';
 				}
 				
 				if ( jQuery("input[@name'save']:checked").val() == '1') {

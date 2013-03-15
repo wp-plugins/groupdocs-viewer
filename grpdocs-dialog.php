@@ -44,6 +44,10 @@ error_reporting(E_ALL | E_STRICT);
     <td align="right" class="gray dwl_gray"><strong>Width</strong></td>
     <td valign="top"><input name="width" type="text" class="opt dwl" id="width" size="6" style="text-align:right" value="600" />px</td>
   </tr>
+  <tr>
+    <td align="right" class="gray dwl_gray"><strong>Choose the protocol</strong></td>
+    <td valign="top"><input type="radio" name="protocol" value="http" checked>http:// <input type="radio" name="protocol" value="https">https://</td>
+  </tr>
 </table>
 
 
@@ -153,7 +157,7 @@ define("UPLOAD_ERR_EMPTY",5);
 
 		$result = $api->Upload($_POST['userId'], $name, 'uploaded', $fs);
 		echo"<script>
-			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\"]');
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\" protocol=\"{$_POST['protocol']}\"]');
 			tinyMCEPopup.close();</script>";
 		die;
 	}
