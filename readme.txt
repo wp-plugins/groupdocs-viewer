@@ -74,9 +74,11 @@ For further help you may choose any of following options:
 
 * You can also contact us by various means as mentioned on our [Contact Us](http://groupdocs.com/about/contact/) page.
 
+
 = Are there any specific PHP extensions that should be enabled? =
 
 cURL extension is required (extension=php_curl.dll)
+
 
 = How to get Document ID (GUID) =
 
