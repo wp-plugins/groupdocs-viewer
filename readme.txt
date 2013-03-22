@@ -13,6 +13,7 @@ Lets you embed the GroupDocs Word, Excel, Powerpoint, PDF Viewer into Wordpress 
 
 GroupDocs Word, Excel, Powerpoint, PDF Viewer Embedder lets you embed several types of files into your WordPress pages using the GroupDocs High Fidelity Viewer - allowing inline viewing (and optional downloading) of the following file types, with no Flash or PDF browser plug-ins required: 
 
+
 * Adobe Acrobat (PDF)
 * Microsoft Word (DOC/DOCX)
 * Microsoft PowerPoint (PPT/PPTX)
