@@ -1,6 +1,6 @@
 === GroupDocs Word,Excel,Powerpoint,PDF Viewer ===
 Contributors: GroupDocs Team
-Tags: doc, docx, pdf, ppt, pptx, xls, xlsx, groupdocs, powerpoint, excel, word, acrobat, plugin, google, images
+Tags: doc, docx, pdf, ppt, pptx, xls, xlsx, groupdocs, powerpoint, excel, word, acrobat, plugin, google, images, viewer
 Author URI: http://groupdocs.com
 Requires at least: 2.8
 Tested up to: 3.5.0
