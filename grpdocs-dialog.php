@@ -1,4 +1,9 @@
 <?php
+if(floatval(phpversion()) < 5.3){
+	echo "Your PHP version is lower than 5.3 while this plugin require PHP 5.3 or higher. <br /> Please, update your PHP version first.";
+	return;
+}
+
 // access wp functions externally
 require_once('bootstrap.php');
 
