@@ -89,6 +89,8 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 == Changelog ==
 
+= 1.3.10 =
+* Updated GroupDocs SDK.
 
 = 1.3.9 =
 * Added error if PHP version is lower than 5.3.
