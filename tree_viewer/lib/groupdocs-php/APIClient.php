@@ -135,7 +135,7 @@ class APIClient {
 
 		$url = $apiServer . $resourcePath;
 
-		$timeoutSec = 0;
+		$timeoutSec = 30;
 		$curl = curl_init();
 		if($this->debug){
 			// curl_setopt($curl, CURLOPT_HEADER, true); // Display headers; returns null response
