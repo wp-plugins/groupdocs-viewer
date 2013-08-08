@@ -88,6 +88,15 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 == Changelog ==
 
+= 1.3.12 =
+* Fix bug with shortcode name.
+
+= 1.3.11 =
+* Updated GroupDocs SDK.
+
+= 1.3.10 =
+* Updated GroupDocs SDK.
+
 = 1.3.10 =
 * Updated GroupDocs SDK.
 
@@ -139,17 +148,3 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 = 1.0 =
 * Initial release.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
