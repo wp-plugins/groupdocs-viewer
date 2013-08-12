@@ -22,6 +22,11 @@ GroupDocs Word, Excel, Powerpoint, PDF Viewer Embedder lets you embed several ty
 
 [GroupDocs Viewer](http://groupdocs.com/apps/viewer/) is an online document viewer that lets you read documents in your browser, regardless of whether you have the software that they were created in. You can view many types to word processing documents (DOC, DOCX, TXT, RTF, ODT), presentations (PPT, PPTX), spreadsheets (XLS, XLSX), portable files (PDF), and image files (JPG, BMP, GIF, TIFF). For each file, you get a high-fidelity rendering, showing the document just as it would if you opened it in the software it was created in. Layout and formatting is retained and you see an exact copy of the original.
 
+Please note:
+To use the document viewer module, you need to sign up with us first. But don't worry, we provide a free 14-day trial, so that you can test the viewer first.
+это можно добавить в конце описания Viewer/Assembly
+
+
 GroupDocs Viewer lets you really read the document. You can search text documents, copy text and even embed the document - GroupDocs Viewer and all - in a web page. You can print or download the file from GroupDocs Viewer if you need to work with it offline.
 
 To use our plugin you need UserId and ApiKey to cofigure the plugin. How and where you can find them  please check in [GroupDocs FAQ](http://groupdocs.com/docs/pages/viewpage.action?pageId=1409573)
