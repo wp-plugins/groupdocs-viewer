@@ -24,7 +24,7 @@ GroupDocs Word, Excel, Powerpoint, PDF Viewer Embedder lets you embed several ty
 
 Please note:
 To use the document viewer module, you need to sign up with us first. But don't worry, we provide a free 14-day trial, so that you can test the viewer first.
-это можно добавить в конце описания Viewer/Assembly
+
 
 
 GroupDocs Viewer lets you really read the document. You can search text documents, copy text and even embed the document - GroupDocs Viewer and all - in a web page. You can print or download the file from GroupDocs Viewer if you need to work with it offline.
