@@ -91,6 +91,10 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 == Changelog ==
 
+
+= 1.3.13 =
+* Update SDK.
+
 = 1.3.12 =
 * Fix bug with shortcode name.
 

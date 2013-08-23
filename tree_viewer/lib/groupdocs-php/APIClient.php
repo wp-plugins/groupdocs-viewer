@@ -124,18 +124,14 @@ class APIClient {
 			$headers[] = "Content-type: application/octet-stream";
 			$headers[] = "Content-Length: ". $postData->getSize();
 
-		} else if (is_object($postData) or is_array($postData)) {
+		} else if (is_object($postData) or is_array($postData) or is_string($postData)) {
 			$headers[] = "Content-type: application/json";
 			$postData = json_encode(self::object_to_array($postData));
 		}
 
-		// if (is_object($postData) or is_array($postData)) {
-			// $postData = json_encode($postData);
-		// }
-
 		$url = $apiServer . $resourcePath;
 
-		$timeoutSec = 30;
+		$timeoutSec = 0;
 		$curl = curl_init();
 		if($this->debug){
 			// curl_setopt($curl, CURLOPT_HEADER, true); // Display headers; returns null response
