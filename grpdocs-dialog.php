@@ -160,7 +160,7 @@ define("UPLOAD_ERR_EMPTY",5);
     	$apiClient = new APIClient($signer);
     	$api = new StorageApi($apiClient);
 
-		$result = $api->Upload($_POST['userId'], $name, 'uploaded', '', $fs);
+		$result = $api->Upload($_POST['userId'], $name, 'uploaded', $fs);
 		echo"<script>
 			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\" protocol=\"{$_POST['protocol']}\"]');
 			tinyMCEPopup.close();</script>";
