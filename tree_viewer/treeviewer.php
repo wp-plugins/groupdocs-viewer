@@ -29,10 +29,11 @@ if( empty($_GET['private_key']) || empty($_GET['user_id']) ) {
   
     try {
         $result = $api->ListEntities($user_id, $cur_path);
-        
+
         $files = $result->result->files;
         $folders = $result->result->folders;
     } catch (Exception $e) {
+        echo "<div >You provided incorrect Client Id or API Key. Please check the configuration</div>";
         echo $e->getMessage();
     }
 
