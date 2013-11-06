@@ -46,7 +46,8 @@ class SignatureEnvelopeInfo {
       'attachSignedDocument' => 'bool',
       'includeViewLink' => 'bool',
       'canBeCommented' => 'bool',
-      'inPersonSign' => 'bool'
+      'inPersonSign' => 'bool',
+      'ownerName' => 'string'
 
     );
 
@@ -73,5 +74,6 @@ class SignatureEnvelopeInfo {
   public $includeViewLink; // bool
   public $canBeCommented; // bool
   public $inPersonSign; // bool
+  public $ownerName; // string
   }
 

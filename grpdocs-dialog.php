@@ -33,12 +33,12 @@ error_reporting(E_ALL | E_STRICT);
 <table>  
   <tr>
     <td align="right" class="gray dwl_gray"><strong>Client Id</strong><br /></td>
-    <td valign="top"><input name="userId" type="text" class="opt dwl" id="userId" style="width:200px;" value="<?php echo get_option('userId'); ?>" /><br/>
+    <td valign="top"><input name="userId" type="text" class="opt dwl" id="userId" style="width:200px;" value="<?php echo get_option('viewer_userId'); ?>" /><br/>
 	<span id="uri-note"></span></td>
   </tr>
   <tr>
     <td align="right" class="gray dwl_gray"><strong>API Key</strong><br /></td>
-    <td valign="top"><input name="privateKey" type="text" class="opt dwl" id="privateKey" style="width:200px;" value="<?php echo get_option('privateKey'); ?>" /><br/>
+    <td valign="top"><input name="privateKey" type="text" class="opt dwl" id="privateKey" style="width:200px;" value="<?php echo get_option('viewer_privateKey'); ?>" /><br/>
 	<span id="uri-note"></span></td>
   </tr>
   <tr>
@@ -105,7 +105,10 @@ error_reporting(E_ALL | E_STRICT);
 </fieldset>
 	<div class="mceActionPanel">
 		<div style="float: left">
-			<input type="button" id="insert" name="insert" value="Insert" onclick="GrpdocsInsertDialog.insert();" />
+			<input type="button" id="insert" name="insert" value="Insert" onclick="GrpdocsInsertDialog.insert();" <?php
+            if (get_option("viewer_userId") == null)
+            { echo 'disabled';}
+            ?>/>
 			
 		</div>
 
@@ -161,9 +164,34 @@ define("UPLOAD_ERR_EMPTY",5);
     	$api = new StorageApi($apiClient);
 
 		$result = $api->Upload($_POST['userId'], $name, 'uploaded',null, $fs);
+        $url = "https://apps.groupdocs.com/document-viewer/embed/{$result->result->guid}";
+        $url = $signer->signUrl($url);
+        $signature = explode("=", $url);
 		echo"<script>
-			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\" protocol=\"{$_POST['protocol']}\"]');
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "?signature=" . @$signature[1]  . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\" protocol=\"{$_POST['protocol']}\"]');
 			tinyMCEPopup.close();</script>";
 		die;
 	}
+}
+if(!empty($_POST) && !empty($_POST['url'])) {
+
+    include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/APIClient.php');
+    include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/StorageApi.php');
+    include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/GroupDocsRequestSigner.php');
+    include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/FileStream.php');
+
+
+    $signer = new GroupDocsRequestSigner(trim($_POST['privateKey']));
+    $apiClient = new APIClient($signer);
+    $api = new StorageApi($apiClient);
+    $guid = $_POST['url'];
+
+    $url = "https://apps.groupdocs.com/document-viewer/embed/{$guid}";
+    $url = $signer->signUrl($url);
+    $signature = explode("=", $url);
+    echo"<script>
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$guid . "?signature=" . @$signature[1]  . "\" height=\"{$_POST['height']}\" width=\"{$_POST['width']}\"]');
+			tinyMCEPopup.close();</script>";
+    die;
+
 }

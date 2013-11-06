@@ -36,7 +36,8 @@ class SubscriptionPlanInfo {
       'price' => 'float',
       'currencyCode' => 'string',
       'billingPeriod' => 'int',
-      'promoCode' => 'string'
+      'promoCode' => 'string',
+      'nextAssesmentDate' => 'string'
 
     );
 
@@ -53,5 +54,6 @@ class SubscriptionPlanInfo {
   public $currencyCode; // string
   public $billingPeriod; // int
   public $promoCode; // string
+  public $nextAssesmentDate; // string
   }
 

@@ -5,8 +5,8 @@ if (!current_user_can('manage_options')) {
     wp_die(__('You do not have sufficient permissions to access this page.'));
 }
 // Get GroupDocs plug-in options from database.
-$userId = get_option('userId');
-$privateKey = get_option('privateKey');
+$userId = get_option('viewer_userId');
+$privateKey = get_option('viewer_privateKey');
 
 if (isset ($_POST['login']) && ($_POST['password'])) {
     $login = trim($_POST['login']);
@@ -51,8 +51,8 @@ if (isset($_POST['grpdocs_submit_hidden']) && $_POST['grpdocs_submit_hidden'] ==
     $userId = trim($_POST['userId']);
     $privateKey = trim($_POST['privateKey']);
 
-    update_option('userId', $userId);
-    update_option('privateKey', $privateKey);
+    update_option('viewer_userId', $userId);
+    update_option('viewer_privateKey', $privateKey);
 
     // Display an 'updated' message.
     ?>
