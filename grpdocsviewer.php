@@ -28,10 +28,10 @@ function grpdocs_getdocument($atts) {
 	$no_iframe = "If you can see this text, your browser does not support iframes. Please enable iframe support in your browser or use the latest version of any popular web browser such as Mozilla Firefox or Google Chrome. For more help, please check our documentation Wiki: <a href='http://groupdocs.com/docs/display/Viewer/GroupDocs+Viewer+Integration+with+3rd+Party+Platforms'>http://groupdocs.com/docs/display/Viewer/GroupDocs+Viewer+Integration+with+3rd+Party+Platforms</a>";
 
 	if (isset($protocol) && $protocol == 'https') {
-		$code = "<iframe src='https://apps.groupdocs.com/document-viewer/embed/{$file}&referer=wordpress-viewer/1.3.12' frameborder='0' width='{$width}' height='{$height}'>{$no_iframe}</iframe>";
+		$code = "<iframe src='https://apps.groupdocs.com/document-viewer/embed/{$file}&referer=wordpress-viewer/1.3.14' frameborder='0' width='{$width}' height='{$height}'>{$no_iframe}</iframe>";
 	} 
 	else {
-		$code = "<iframe src='http://apps.groupdocs.com/document-viewer/embed/{$file}&referer=wordpress-viewer/1.3.12' frameborder='0' width='{$width}' height='{$height}'>{$no_iframe}</iframe>";
+		$code = "<iframe src='http://apps.groupdocs.com/document-viewer/embed/{$file}&referer=wordpress-viewer/1.3.14' frameborder='0' width='{$width}' height='{$height}'>{$no_iframe}</iframe>";
 	}
 	$code = str_replace("%W%", $width, $code);
 	$code = str_replace("%H%", $height, $code);
