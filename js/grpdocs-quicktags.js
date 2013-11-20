@@ -2,6 +2,6 @@ edButtons[edButtons.length] =
     new edButton('gd_viewer'
         ,'gd_viewer'
         ,'[grpdocsview file="'
-        ,'" width="500" height="600" protocol="http"]'
+        ,'" quality="100" height="700" width="600" protocol="http" download="True" print="True" use_pdf="True"]'
         ,'1'
     );

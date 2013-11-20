@@ -28,11 +28,30 @@ function loadFileTree($){
 				if(self.parent().hasClass("file")) {
 				    document.getElementById('insert').disabled = false;
 					self.click(function(e){
-						e.preventDefault();
+						e.preventDefault();                                                
 						var height = parseInt($('#height').val());
 						var width =  parseInt($('#width').val());
+                                                if ( jQuery("input[name='download']").is(":checked")==true){
+                  
+							var download = 'True';
+						}else{
+
+							var download="False";
+						}
+						if ( jQuery("input[name='print']").is(":checked")==true) {
+						        var print="True";
+						}else{
+							var print="False";
+						}
+
+						if ( jQuery("input[name='use_pdf']").is(":checked")==true) {
+						       var use_pdf="True";
+						}else{
+						      var use_pdf="False";
+						}                                                
+
 						var protocol = $("input[@name'protocol']:checked").val()
-						$('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" width="' + width + '" height="' +  height + '" protocol="' + protocol + '"]');
+						$('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" quality="100" height="' + height + '" width="' +  width + '" protocol="' + protocol + '" download="' + download + '" print="' + print + '" use_pdf="' + use_pdf + '"]');
 					})
 				}
 			});
@@ -42,8 +61,7 @@ function loadFileTree($){
 			if( groupdocs_viewer_error_counter < 3 ){
 				loadFileTree($);
 			}
-			else {
-				console.log(response);
+			else {				
 				show_server_error($);
 			}
 		}

@@ -91,6 +91,9 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 == Changelog ==
 
+= 1.4.0 =
+* Add new functionality in plugin
+
 = 1.3.14 =
 * Fix bug to add signature in url.
 
@@ -157,3 +160,4 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 = 1.0 =
 * Initial release.
+

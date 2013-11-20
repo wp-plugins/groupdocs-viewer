@@ -55,19 +55,31 @@ var GrpdocsInsertDialog = {
 					update_sc();
 				});
 				jQuery("input[name='protocol']").change(function(){
-					update_sc();
-				});	
+					update_sc(); 
+                                 console.log(jQuery(":checkbox[@name'download']:checked").val())                                
+				});
+                jQuery("input[name='download']").change(function(){
+                   
+update_sc();
+                });
+                jQuery("input[name='print']").change(function(){
+                    update_sc();
+                });
+                jQuery("input[name='use_pdf']").change(function(){
+                    update_sc();
+                });
 
-		
-		function update_sc() {
+
+        function update_sc() {
 			 shortcode = 'grpdocsview';
 			 
 				if (( jQuery('#url').val() !=0 ) & ( jQuery('#url').val() ) !=null) {
-					shortcode = shortcode + '  file="'+jQuery('#url').val()+'"';
+					shortcode = shortcode + '  file="'+jQuery('#url').val()+'" quality="100"';
 				} else if ( jQuery('#url').val() == '' ) {
 					jQuery('#uri-note').html('');
-					shortcode = shortcode + ' file=""';
+					shortcode = shortcode + ' file="" quality="100"';
 				}
+
 				if (( jQuery('#height').val() !=0 ) & ( jQuery('#height').val() ) !=null) {
 					shortcode = shortcode + '  height="'+jQuery('#height').val()+'"';
 				}
@@ -76,8 +88,28 @@ var GrpdocsInsertDialog = {
 				}
 
 				if ( jQuery("input[@name'protocol']:checked").val() ) {
+                                       
 					shortcode = shortcode + '  protocol="'+jQuery('input[@name\'protocol\']:checked').val()+'"';
 				}
+
+                if ( jQuery("input[name='download']").is(":checked")==true){
+                  
+shortcode = shortcode + '  download="True"';
+                }else{
+
+shortcode = shortcode + '  download="False"';
+}
+                if ( jQuery("input[name='print']").is(":checked")==true) {
+                    shortcode = shortcode + '  print="True"';
+                }else{
+shortcode = shortcode + '  print="False"';
+}
+
+                if ( jQuery("input[name='use_pdf']").is(":checked")==true) {
+                    shortcode = shortcode + '  use_pdf="True"';
+                }else{
+shortcode = shortcode + '  use_pdf="False"';
+}
 				
 				if ( jQuery("input[@name'save']:checked").val() == '1') {
 					shortcode = shortcode + '  save="1"';
@@ -104,8 +136,6 @@ var GrpdocsInsertDialog = {
 	insert : function() {
         if($('#file').val()) {
             $('#form').submit();
-        } else if ( $('#url').val()) {
-            $('#form').submit();
         } else {
             // insert the contents from the input into the document
             tinyMCEPopup.editor.execCommand('mceInsertContent', false, jQuery('#shortcode').val());
@@ -116,3 +146,4 @@ var GrpdocsInsertDialog = {
 };
 
 tinyMCEPopup.onInit.add(GrpdocsInsertDialog.init, GrpdocsInsertDialog);
+

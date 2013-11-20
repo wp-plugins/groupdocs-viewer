@@ -29,10 +29,10 @@
 		getInfo : function() { 
 			return { 
 				longname : 'GroupDocs Viewer Embedder',
-				author : 'Sergiy Osypov',
+				author : 'Marketplace Team',
 				authorurl : 'http://www.groupdocs.com',
 				infourl : 'http://www.groupdocs.com',
-				version : "1.0"}
+				version : "1.4.0"}
 		}
 	});
 	tinymce.PluginManager.add('grpdocs',tinymce.plugins.GrpdocsPlugin)
