@@ -95,7 +95,10 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 * Minor bug fix - updated browse and embed functionality
 
 = 1.4.0 =
-* Add new functionality in plugin
+* Added enabling/disabling document downloading
+* Added enabling/disabling document printing
+* Added enabling/disabling text selecting and coping
+* Misc bugfixes
 
 = 1.3.14 =
 * Fix bug to add signature in url.
