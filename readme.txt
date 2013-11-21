@@ -98,7 +98,7 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 * Added enabling/disabling document downloading
 * Added enabling/disabling document printing
 * Added enabling/disabling text selecting and coping
-* Misc bugfixes
+* Minor bugfixes
 
 = 1.3.14 =
 * Fix bug to add signature in url.
