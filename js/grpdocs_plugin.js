@@ -5,8 +5,8 @@
 			ed.addCommand('mceGrpdocs', function() {
 				ed.windowManager.open( {
 					file : url + '/../grpdocs-dialog.php',
-					width : 420 + parseInt(ed.getLang('grpdocs.delta_width',0)),
-					height : 540 + parseInt(ed.getLang('grpdocs.delta_height',0)),
+					width : 470 + parseInt(ed.getLang('grpdocs.delta_width',0)),
+					height : 560 + parseInt(ed.getLang('grpdocs.delta_height',0)),
 					inline : 1}, {
 						plugin_url : url,
 						some_custom_arg : 'custom arg'

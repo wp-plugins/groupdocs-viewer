@@ -91,6 +91,9 @@ You can find how to get Document GUID [here](http://groupdocs.com/docs/pages/vie
 
 == Changelog ==
 
+= 1.4.1=
+Minor bug fix - updated browse and embed functionality
+
 = 1.4.0 =
 * Add new functionality in plugin
 

@@ -116,13 +116,13 @@ error_reporting(E_ALL | E_STRICT);
                     <td colspan="2">
                         <br/>
                         Shortcode Preview
-                        <textarea name="shortcode" cols="72" rows="3" id="shortcode"></textarea>
+                        <textarea name="shortcode" cols="72" rows="4" id="shortcode"></textarea>
                     </td>
                 </tr>
             </table>
         </fieldset>
         <div class="mceActionPanel">
-            <div style="float: left">
+            <div style="float:left;margin-bottom:10px">
                 <input type="button" id="insert" name="insert" value="Insert"
                        onclick="GrpdocsInsertDialog.insert();" <?php
                 if (get_option("viewer_userId") == null) {
