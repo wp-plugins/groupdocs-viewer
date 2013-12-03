@@ -179,11 +179,11 @@ if (!empty($_POST) && !empty($_FILES)) {
         $fs = FileStream::fromFile($tmp_name);
 
 
-        $signer = new GroupDocsRequestSigner(trim($_POST['privateKey']));
+        $signer = new GroupDocsRequestSigner(strip_tags(trim($_POST['privateKey'])));
         $apiClient = new APIClient($signer);
         $api = new StorageApi($apiClient);
 
-        $result = $api->Upload($_POST['userId'], $name, 'uploaded', null, $fs);
+        $result = $api->Upload(strip_tags(trim($_POST['userId'])), $name, 'uploaded', null, $fs);
         
         if (!empty($_POST['download'])) {
             $download = 'True';
@@ -202,7 +202,7 @@ if (!empty($_POST) && !empty($_FILES)) {
         };
 
         echo "<script>
-			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" quality=\"100\" height=\"" . $_POST['height'] . "\" width=\"" . $_POST['width'] . "\" protocol=\"" . $_POST['protocol'] . "\" download=\"" . $download . "\" print=\"" . $print . "\" use_pdf=\"" . $use_pdf . "\"]');
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" quality=\"100\" height=\"" . (int)strip_tags(trim($_POST['height'])) . "\" width=\"" . (int)strip_tags(trim($_POST['width'])) . "\" protocol=\"" . $_POST['protocol'] . "\" download=\"" . $download . "\" print=\"" . $print . "\" use_pdf=\"" . $use_pdf . "\"]');
 			tinyMCEPopup.close();</script>";
         die;
     }

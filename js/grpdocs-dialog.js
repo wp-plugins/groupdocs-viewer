@@ -69,22 +69,26 @@ var GrpdocsInsertDialog = {
             update_sc();
         });
 
+        function strip_tags(str){
+            return str.replace(/<\/?[^>]+>/gi, '');
+        };
+
 
         function update_sc() {
             shortcode = 'grpdocsview';
 
             if (( jQuery('#url').val() != 0 ) & ( jQuery('#url').val() ) != null) {
-                shortcode = shortcode + '  file="' + jQuery('#url').val() + '" quality="100"';
+                shortcode = shortcode + '  file="' + strip_tags(jQuery('#url').val()) + '" quality="100"';
             } else if (jQuery('#url').val() == '') {
                 jQuery('#uri-note').html('');
                 shortcode = shortcode + ' file="" quality="100"';
             }
 
             if (( jQuery('#height').val() != 0 ) & ( jQuery('#height').val() ) != null) {
-                shortcode = shortcode + '  height="' + jQuery('#height').val() + '"';
+                shortcode = shortcode + '  height="' + strip_tags(jQuery('#height').val()) + '"';
             }
             if (( jQuery('#width').val() != 0 ) & ( jQuery('#width').val() ) != null) {
-                shortcode = shortcode + '  width="' + jQuery('#width').val() + '"';
+                shortcode = shortcode + '  width="' + strip_tags(jQuery('#width').val()) + '"';
             }
 
             if (jQuery("input[@name'protocol']:checked").val()) {
