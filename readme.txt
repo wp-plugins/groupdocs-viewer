@@ -27,7 +27,7 @@ To use the document viewer module, you need to sign up with us first. But don't 
 
 GroupDocs Viewer lets you really read the document. You can search text documents, copy text and even embed the document - GroupDocs Viewer and all - in a web page. You can print or download the file from GroupDocs Viewer if you need to work with it offline.
 
-To use our plugin you will need a UserId and an ApiKey to complete configuration of our plugin. For how and where to find the required details please check in our [GroupDocs FAQ](http://groupdocs.com/docs/pages/viewpage.action?pageId=1409573)
+To use our plugin you will need a UserId and an ApiKey to complete configuration of our plugin. For how and where to find the required details please check in our [GroupDocs FAQ](http://groupdocs.com/docs/pages/viewpage.action?pageId=1409573).
 
 = Online Document Viewer =
 There are several benefits to using an [online document viewer](http://groupdocs.com/apps/viewer/ "Online document viewer"),such as the [GroupDocs Viewer](http://groupdocs.com/apps/viewer/). The main one is that it is platform and software independent. No matter  what type of computer or software you have, you can view most common business file formats. You don't have to install software or go through complicated conversion processes. Just upload the file and look at the content in your browser.
