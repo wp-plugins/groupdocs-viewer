@@ -59,6 +59,16 @@ Please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofoll
 
 == Installation ==
 
+1. Upload the entire `groupdocs-embedder` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the `Plugins` menu in WordPress.
+3. Done.
+
+Upload the documents to your GroupDocs account. Use the GroupDocs Viewer Embedder button in the Visual editor to build the appropriate shortcode by copy&pasting the document groupdocs.com link.
+
+The other way to embed the document is to upload it via this plugin to your groupdocs.com account then the shortcode will be automatically generated and inserted to the content of the post.
+
+Be aware that to upload the document with this plugin to your groupdocs.com account you will have to input the  User Id and Private Key, which can be found at the bottom of the profile in the GroupDocs dashboard (click icon in the top right of the header to view the profile). It will then be stored in the Plugin Settings.
+
 For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">the plugin's documentation page</a>.
 
 
@@ -86,7 +96,7 @@ Please see <a href="http://groupdocs.com/docs/pages/viewpage.action?pageId=14095
 == Changelog ==
 
 = 1.4.2 =
-*Minor security fix
+* Minor security fix
 
 = 1.4.1 =
 * Minor bug fix - updated browse and embed functionality
