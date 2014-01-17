@@ -19,15 +19,15 @@ GroupDocs' PDF viewer plugin enables you to easily embed and display PDF and Mic
 
 == Key Benefits of GroupDocs' PDF Viewer Plugin ==
 
-1. <strong>Native text rendering.</strong> GroupDocs Viewer doesn't rasterize documents, but converts them to a combination of HTML, CSS and SVG. As a result, embedded documents are rendered as real text files, not images. This allows users, for example, to select and copy text to the clipboard right from the document embedded on your website.
+1. = Native text rendering =. GroupDocs Viewer doesn't rasterize documents, but converts them to a combination of HTML, CSS and SVG. As a result, embedded documents are rendered as real text files, not images. This allows users, for example, to select and copy text to the clipboard right from the document embedded on your website.
 
-2. <strong>No 3rd party software required.</strong> With GroupDocs' PDF viewer, users don't have to install Acrobat Reader, Flash or any other browser plugins - you just embed a document to a webpage and users can view it right away.
+2. = No 3rd party software required =. With GroupDocs' PDF viewer, users don't have to install Acrobat Reader, Flash or any other browser plugins - you just embed a document to a webpage and users can view it right away.
 
-3. <strong>Unmatched display quality.</strong> Thanks to font extraction and true text rendering, you can embed documents to just about any page size without loss of display quality. Documents are zoomable and text always look clear and sharp.
+3. = Unmatched display quality =. Thanks to font extraction and true text rendering, you can embed documents to just about any page size without loss of display quality. Documents are zoomable and text always look clear and sharp.
 
-4. <strong>Cross-browser compatibility.</strong> GroupDocs Viewer is mobile-ready and works with all browsers that support HTML5, including: IE8+, Chrome, Chrome for Android, Firefox, Firefox for Android, Opera, Opera Mini, Opera for Android, Safari 5+, and Mobile Safari.
+4. = Cross-browser compatibility =. GroupDocs Viewer is mobile-ready and works with all browsers that support HTML5, including: IE8+, Chrome, Chrome for Android, Firefox, Firefox for Android, Opera, Opera Mini, Opera for Android, Safari 5+, and Mobile Safari.
 
-5. <strong>Convenient UI.</strong> The PDF viewer plugin comes with a convenient interface, which allows users to easily browse embedded documents on your website. For example, users can scroll multipage documents or turn pages with a click of a button; jump straight to a specified page; preview pages with thumbnails; search for text within a document using keywords; zoom, print and download documents right from a web-browser. And if you don't want users to be able to copy your documents, you can easily restrict options for printing/downloading and text coping.
+5. = Convenient UI =. The PDF viewer plugin comes with a convenient interface, which allows users to easily browse embedded documents on your website. For example, users can scroll multipage documents or turn pages with a click of a button; jump straight to a specified page; preview pages with thumbnails; search for text within a document using keywords; zoom, print and download documents right from a web-browser. And if you don't want users to be able to copy your documents, you can easily restrict options for printing/downloading and text coping.
 
 == Supported File Formats ==
 
@@ -49,13 +49,13 @@ GroupDocs' PDF viewer plugin enables you to easily embed and display PDF and Mic
 * Electronic publication: .epub
 == Installation Instructions ==
 
-<strong>Please note:</strong> To use the PDF viewer plugin on your WordPress website, you need to <a href="http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">register with GroupDocs</a> first. We offer a free 14-day trial so that you can test before buying our service.
+Please note: To use the PDF viewer plugin on your WordPress website, you need to [register with GroupDocs](http://groupdocs.com/purchase/api-pricing) first. We offer a free 14-day trial so that you can test before buying our service.
 
-For more information on the GroupDocs' online PDF viewer, please visit the <a href="http://groupdocs.com/apps/viewer" target="_blank">product's homepage</a>.
+For more information on the GroupDocs' online PDF viewer, please visit the [product's homepage](http://groupdocs.com/apps/viewer).
 
-<h4>Have Questions?</h4>
+== Have Questions? ==
 
-Please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofollow" target="_blank">contact us</a>!
+Please feel free to [contact us](http://groupdocs.com/corporate/contact)!
 
 == Installation ==
 
