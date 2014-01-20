@@ -31,22 +31,22 @@ GroupDocs' PDF viewer plugin enables you to easily embed and display PDF and Mic
 
 <h4>Supported File Formats</h4>
 
-Portable Document Format: .pdf
-Microsoft Word: .doc .docx .docm .dot .dotx .dotm
-Microsoft Excel: .xls .xlsx .xlsm .xlsb .xml
-Microsoft PowerPoint: .ppt .pptx
-Microsoft Visio: .vsd .vdx .vss .vsx .vst .vtx .vsdx .vdw
-Microsoft Project: .mpp .mpt
-Microsoft Outlook: .msg .eml
-OpenDocument Formats: .odt .ott .ods .odp
-Rich Text Format: .rtf
-Plain Text File: .txt
-Comma-Separated Values: .csv
-HyperText Markup Language: .htm .html .mht .mhtml
-XML Paper Specification: .xps
-AutoCAD Drawing File Format: .dxf
-Image files: .bmp .gif .jpg .png .tiff
-Electronic publication: .epub
+* Portable Document Format: .pdf
+* Microsoft Word: .doc .docx .docm .dot .dotx .dotm
+* Microsoft Excel: .xls .xlsx .xlsm .xlsb .xml
+* Microsoft PowerPoint: .ppt .pptx
+* Microsoft Visio: .vsd .vdx .vss .vsx .vst .vtx .vsdx .vdw
+* Microsoft Project: .mpp .mpt
+* Microsoft Outlook: .msg .eml
+* OpenDocument Formats: .odt .ott .ods .odp
+* Rich Text Format: .rtf
+* Plain Text File: .txt
+* Comma-Separated Values: .csv
+* HyperText Markup Language: .htm .html .mht .mhtml
+* XML Paper Specification: .xps
+* AutoCAD Drawing File Format: .dxf
+* Image files: .bmp .gif .jpg .png .tiff
+* Electronic publication: .epub
 <h4>Installation Instructions</h4>
 
 <strong>Please note:</strong> To use the PDF viewer plugin on your WordPress website, you need to <a href="http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">register with GroupDocs</a> first. We offer a free 14-day trial so that you can test before buying our service.
