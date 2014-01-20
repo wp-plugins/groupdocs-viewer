@@ -1,13 +1,13 @@
 === GroupDocs PDF Viewer Plugin for WordPress ===
 Contributors: GroupDocs Team
-Tags: groupdocs, groupdocs viewer, document viewer, pdf viewer, pdf viewer plugin, display pdf, embed pdf, word, doc, doc viewer, docx, excel, xls, xlsx, powerpoint, ppt, pptx, image viewer
+Tags: groupdocs, groupdocs viewer, document viewer, pdf viewer, pdf viewer plugin, display pdf, embed pdf, embed pdf in wordpress, word, word viewer, word document, embed word, word plugin, doc, doc viewer, docx, docx viewer, excel, excel plugin, xls, xlsx, spreadsheet, embed spreadsheet, powerpoint, powerpoint viewer, ppt, ppt viewer, pptx, image viewer, display image
 Author URI: http://groupdocs.com
 Requires at least: 2.8
 Tested up to: 3.5.0
 Stable tag: trunk
 License: GPLv2 
 
-Lets you embed the GroupDocs Word, Excel, Powerpoint, PDF Viewer into Wordpress for your documents.
+Seamlessly embed and display PDF, Microsoft Word, Excel and PowerPoint documents on your WordPress website.
 
 == Summary ==
 
@@ -15,15 +15,15 @@ Seamlessly embed and display PDF, Microsoft Word, Excel and PowerPoint documents
 
 == Description ==
 
-GroupDocs' PDF viewer plugin enables you to easily embed and display PDF and Microsoft Office documents right on your WordPress website. The viewer doesn't require Adobe Reader, Flash or other browser plugins and comes with a convenient user interface for easy navigation when viewing multi-page documents.
+GroupDocs PDF viewer plugin enables you to easily embed and display PDF and Microsoft Office documents right on your WordPress website. The viewer doesn't require Adobe Reader, Flash or other browser plugins and comes with a convenient user interface for easy navigation when viewing multi-page documents.
 
-<h4>Key Benefits of GroupDocs' PDF Viewer Plugin</h4>
+<h4>Key Benefits of the GroupDocs PDF Viewer Plugin</h4>
 
 1. <strong>Native text rendering.</strong> GroupDocs Viewer doesn't rasterize documents, but converts them to a combination of HTML, CSS and SVG. As a result, embedded documents are rendered as real text files, not images. This allows users, for example, to select and copy text to the clipboard right from the document embedded on your website.
 
-2. <strong>No 3rd party software required.</strong> With GroupDocs' PDF viewer, users don't have to install Acrobat Reader, Flash or any other browser plugins - you just embed a document to a webpage and users can view it right away.
+2. <strong>No 3rd party software required.</strong> With the GroupDocs PDF viewer, users don't have to install Acrobat Reader, Flash or any other browser plugins - you just embed a document to a webpage and users can view it right away.
 
-3. <strong>Unmatched display quality.</strong> Thanks to font extraction and true text rendering, you can embed documents to just about any page size without loss of display quality. Documents are zoomable and text always look clear and sharp.
+3. <strong>Unmatched display quality.</strong> Thanks to font extraction and true text rendering, you can embed documents to just about any page size without loss of display quality. Documents are zoomable and text always looks clear and sharp.
 
 4. <strong>Cross-browser compatibility.</strong> GroupDocs Viewer is mobile-ready and works with all browsers that support HTML5, including: IE8+, Chrome, Chrome for Android, Firefox, Firefox for Android, Opera, Opera Mini, Opera for Android, Safari 5+, and Mobile Safari.
 
@@ -31,27 +31,32 @@ GroupDocs' PDF viewer plugin enables you to easily embed and display PDF and Mic
 
 <h4>Supported File Formats</h4>
 
-* Portable Document Format: .pdf
-* Microsoft Word: .doc .docx .docm .dot .dotx .dotm
-* Microsoft Excel: .xls .xlsx .xlsm .xlsb .xml
-* Microsoft PowerPoint: .ppt .pptx
-* Microsoft Visio: .vsd .vdx .vss .vsx .vst .vtx .vsdx .vdw
-* Microsoft Project: .mpp .mpt
-* Microsoft Outlook: .msg .eml
-* OpenDocument Formats: .odt .ott .ods .odp
-* Rich Text Format: .rtf
-* Plain Text File: .txt
-* Comma-Separated Values: .csv
-* HyperText Markup Language: .htm .html .mht .mhtml
-* XML Paper Specification: .xps
-* AutoCAD Drawing File Format: .dxf
-* Image files: .bmp .gif .jpg .png .tiff
-* Electronic publication: .epub
+<ul>
+<li>Portable Document Format: .pdf</li>
+<li>Microsoft Word: .doc .docx .docm .dot .dotx .dotm</li>
+<li>Microsoft Excel: .xls .xlsx .xlsm .xlsb .xml</li>
+<li>Microsoft PowerPoint: .ppt .pptx</li>
+<li>Microsoft Visio: .vsd .vdx .vss .vsx .vst .vtx .vsdx .vdw</li>
+<li>Microsoft Project: .mpp .mpt</li>
+<li>Microsoft Outlook: .msg .eml</li>
+<li>OpenDocument Formats: .odt .ott .ods .odp</li>
+<li>Rich Text Format: .rtf</li>
+<li>Plain Text File: .txt</li>
+<li>Comma-Separated Values: .csv</li>
+<li>HyperText Markup Language: .htm .html .mht .mhtml</li>
+<li>XML Paper Specification: .xps</li>
+<li>AutoCAD Drawing File Format: .dxf</li>
+<li>Image files: .bmp .gif .jpg .png .tiff</li>
+<li>Electronic publication: .epub</li>
+</ul>
+
+For more information on the GroupDocs online PDF viewer, please visit <a href="http://groupdocs.com/apps/viewer" target="_blank">product's homepage</a>.
+
 <h4>Installation Instructions</h4>
 
-<strong>Please note:</strong> To use the PDF viewer plugin on your WordPress website, you need to <a href="http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">register with GroupDocs</a> first. We offer a free 14-day trial so that you can test before buying our service.
+<strong>Please note:</strong> To use the plugin on your WordPress website, you need to <a href="http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">register with GroupDocs</a> first. We offer a free 14-day trial so that you can test before buying our service.
 
-For more information on the GroupDocs' online PDF viewer, please visit the <a href="http://groupdocs.com/apps/viewer" target="_blank">product's homepage</a>.
+For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
 
 <h4>Have Questions?</h4>
 
@@ -59,18 +64,7 @@ Please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofoll
 
 == Installation ==
 
-1. Upload the entire `groupdocs-embedder` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the `Plugins` menu in WordPress.
-3. Done.
-
-Upload the documents to your GroupDocs account. Use the GroupDocs Viewer Embedder button in the Visual editor to build the appropriate shortcode by copy&pasting the document groupdocs.com link.
-
-The other way to embed the document is to upload it via this plugin to your groupdocs.com account then the shortcode will be automatically generated and inserted to the content of the post.
-
-Be aware that to upload the document with this plugin to your groupdocs.com account you will have to input the  User Id and Private Key, which can be found at the bottom of the profile in the GroupDocs dashboard (click icon in the top right of the header to view the profile). It will then be stored in the Plugin Settings.
-
-For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">the plugin's documentation page</a>.
-
+For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
 
 
 == Screenshots ==
@@ -79,11 +73,10 @@ For detailed installation and usage instructions, please see <a href="http://gro
 2. Here's a screenshot of the GroupDocs Viewer Embedder in a Wordpress blog
 
 
-
 == Frequently Asked Questions ==
 
 = Where can I get detailed help? =
-For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">the plugin's documentation page</a>.
+For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
 
 If you still have questions, please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofollow" target="_blank">contact us</a>!
 
