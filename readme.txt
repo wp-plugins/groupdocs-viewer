@@ -92,7 +92,7 @@ Also, the following are instructions on how to use 3rd party cloud storage provi
 == Frequently Asked Questions ==
 
 = Is this a free plugin? =
-Not really. We do have a free plan, but it comes with a number of restrictions. We offer a free 14-day trial so you can try the plugin out before committing to using GroupDocs. For more details on all plans available, please see <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">this page</a>.
+Not really. We do have a free plan, but it comes with a number of restrictions. We offer a free 14-day trial so you can try the plugin out before committing to using GroupDocs. For more details on all plans available, please see <a href="http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">this page</a>.
 
 = Can I store documents on a local storage? =
 No, documents can only be stored either on our cloud storage, or any of the following 3rd party storage providers:
