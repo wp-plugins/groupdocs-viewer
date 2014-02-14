@@ -166,4 +166,3 @@ Please see <a href="http://groupdocs.com/docs/pages/viewpage.action?pageId=14095
 
 = 1.0 =
 * Initial release.
-
