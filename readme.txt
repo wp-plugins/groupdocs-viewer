@@ -72,10 +72,9 @@ Please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofoll
 
 <strong>A note about storage options:</strong> This plugin is developed with the GroupDocs Viewer for Cloud API, which means that all documents are stored and processed on GroupDocs' cloud storage. You cannot store documents locally with this plugin. However, in addition to GroupDocs' cloud storage, you can use any of the following 3rd party storage providers: Dropbox, Amazon S3, Box, Windows Azure and Google Cloud.
 
-For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
+<strong>For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a></strong>.
 
 Also, the following are instructions on how to use 3rd party cloud storage providers with the plugin:
-
 <ul> 
 <li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Dropbox" rel="nofollow" target="_blank">Dropbox</a></li>
 <li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Amazon+S3" rel="nofollow" target="_blank">Amazon S3</a></li>
@@ -93,11 +92,10 @@ Also, the following are instructions on how to use 3rd party cloud storage provi
 == Frequently Asked Questions ==
 
 = Is this a free plugin? =
-Not really. We do have a free plan, but it comes with a number of restrictions. We offer a free 14-day trial so you can try the plugin out before committing to using GroupDocs. For more details on all plans available, please see this page.
+Not really. We do have a free plan, but it comes with a number of restrictions. We offer a free 14-day trial so you can try the plugin out before committing to using GroupDocs. For more details on all plans available, please see <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">this page</a>.
 
 = Can I store documents on a local storage? =
 No, documents can only be stored either on our cloud storage, or any of the following 3rd party storage providers:
-
 <ul>
 <li>Dropbox</li> 
 <li>Amazon S3</li>
@@ -108,7 +106,6 @@ No, documents can only be stored either on our cloud storage, or any of the foll
 
 = Where can I get detailed help? =
 For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
-
 If you still have questions, please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofollow" target="_blank">contact us</a>!
 
 = Are there any specific PHP extensions that should be enabled? =
