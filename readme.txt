@@ -1,6 +1,6 @@
 === GroupDocs PDF Viewer Plugin for WordPress ===
 Contributors: GroupDocs Team
-Tags: groupdocs, groupdocs viewer, document viewer, pdf viewer, pdf viewer plugin, display pdf, embed pdf, embed pdf in wordpress, word, word viewer, word document, embed word, word plugin, doc, doc viewer, docx, docx viewer, excel, excel plugin, xls, xlsx, spreadsheet, embed spreadsheet, powerpoint, powerpoint viewer, ppt, ppt viewer, pptx, image viewer, display image
+Tags: groupdocs, groupdocs viewer, document viewer, pdf viewer, pdf viewer plugin, display pdf, embed pdf, embed pdf in wordpress, word, word viewer, word document, embed word, word plugin, doc, doc viewer, docx, docx viewer, excel, excel plugin, xls, xlsx, spreadsheet, embed spreadsheet, powerpoint, powerpoint viewer, ppt, ppt viewer, pptx, image viewer, display image, docm, dot, dotx, dotm, xlsm, xlsb, xml, visio, vsd, vdx, vss, vsx, vst, vtx, vsdx, vdw, mpp, mpt, msg, eml, opendocument, odt, ott, ods, odp, rtf, txt, csv, xps, autocad, cad, dxf, bmp, gif, jpg, png, tiff, epub
 Author URI: http://groupdocs.com
 Requires at least: 2.8
 Tested up to: 3.5.0
@@ -16,6 +16,10 @@ Seamlessly embed and display PDF, Microsoft Word, Excel and PowerPoint documents
 == Description ==
 
 GroupDocs PDF viewer plugin enables you to easily embed and display PDF and Microsoft Office documents right on your WordPress website. The viewer doesn't require Adobe Reader, Flash or other browser plugins and comes with a convenient user interface for easy navigation when viewing multi-page documents.
+
+<strong>Please note:</strong> this plugin is developed using the GroupDocs Viewer for Cloud API, which means that all documents are stored and processed on GroupDocs' cloud storage. You cannot store documents locally with this plugin. However, in addition to GroupDocs' cloud storage, you can use any of the following 3rd party storage providers: Dropbox, Amazon S3, Box, Windows Azure and Google Cloud.
+
+<strong>Before installing the plugin:</strong> please be aware that the GroupDocs Viewer for Cloud API is a paid service and you will have to register with us. We offer a free 14-day trial as well as a free, restricted, plan. For more details, please <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">see all plans</a> available.
 
 <h4>Key Benefits of the GroupDocs PDF Viewer Plugin</h4>
 
@@ -64,8 +68,21 @@ Please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofoll
 
 == Installation ==
 
+<strong>Before installing the plugin:</strong> Please be aware that the GroupDocs Viewer for Cloud API is a paid service and you will have to register with us. We offer a free 14-day trial as well as a free, restricted, plan. For more details, please <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">see all plans</a> available.
+
+<strong>A note about storage options:</strong> This plugin is developed with the GroupDocs Viewer for Cloud API, which means that all documents are stored and processed on GroupDocs' cloud storage. You cannot store documents locally with this plugin. However, in addition to GroupDocs' cloud storage, you can use any of the following 3rd party storage providers: Dropbox, Amazon S3, Box, Windows Azure and Google Cloud.
+
 For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
 
+Also, the following are instructions on how to use 3rd party cloud storage providers with the plugin:
+
+<ul> 
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Dropbox" rel="nofollow" target="_blank">Dropbox</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Amazon+S3" rel="nofollow" target="_blank">Amazon S3</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+box.com" rel="nofollow" target="_blank">Box</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Windows+Azure" rel="nofollow" target="_blank">Windows Azure</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Google+Cloud" rel="nofollow" target="_blank">Google Cloud</a></li>
+</ul>
 
 == Screenshots ==
 
@@ -74,6 +91,20 @@ For detailed installation and usage instructions, please see <a href="http://gro
 
 
 == Frequently Asked Questions ==
+
+= Is this a free plugin? =
+Not really. We do have a free plan, but it comes with a number of restrictions. We offer a free 14-day trial so you can try the plugin out before committing to using GroupDocs. For more details on all plans available, please see this page.
+
+= Can I store documents on a local storage? =
+No, documents can only be stored either on our cloud storage, or any of the following 3rd party storage providers:
+
+<ul>
+<li>Dropbox</li> 
+<li>Amazon S3</li>
+<li>Box</li> 
+<li>Windows Azure</li> 
+<li>Google Cloud</li>
+</ul>
 
 = Where can I get detailed help? =
 For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
@@ -85,6 +116,17 @@ Yes, the cURL (extension=php_curl.dll) extension is required to run the viewer.
 
 = How can I get a document ID (GUID)? =
 Please see <a href="http://groupdocs.com/docs/pages/viewpage.action?pageId=1409575" target="_blank">this page</a> for details.
+
+= How do I use Dropbox or other 3rd party cloud storages with the plugin? =
+Please see the following guides for each of the available options:
+
+<ul> 
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Dropbox" rel="nofollow" target="_blank">Dropbox</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Amazon+S3" rel="nofollow" target="_blank">Amazon S3</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+box.com" rel="nofollow" target="_blank">Box</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Windows+Azure" rel="nofollow" target="_blank">Windows Azure</a></li>
+<li><a href="http://groupdocs.com/docs/display/documentation/Integration+of+GroupDocs+with+Google+Cloud" rel="nofollow" target="_blank">Google Cloud</a></li>
+</ul>
 
 == Changelog ==
 
