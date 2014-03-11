@@ -205,4 +205,3 @@ Please see the following guides for each of the available options:
 
 = 1.0 =
 * Initial release.
-
