@@ -6,7 +6,7 @@ Plugin URI: http://www.groupdocs.com/
 Description: Lets you embed PPT, PPTX, XLS, XLSX, DOC, DOCX, PDF and many other formats from your GroupDocs acount in a web page using the GroupDocs Embedded Viewer (no Flash or PDF browser plug-ins required).
 Author: GroupDocs Team <support@groupdocs.com>
 Author URI: http://www.groupdocs.com/
-Version: 1.4.3
+Version: 1.4.4
 License: GPLv2
 */
 
@@ -23,6 +23,7 @@ function grpdocs_getdocument($atts) {
         'download' => '',
         'print' => '',
         'use_pdf' => '',
+        'use_scrollbar' => '',
         'quality' => '',
 		'page' => 0,
 		'version' => 1,
@@ -37,23 +38,23 @@ function grpdocs_getdocument($atts) {
         include_once(dirname(__FILE__) . '/tree_viewer/lib/groupdocs-php/FileStream.php');
         $signer = new GroupDocsRequestSigner(get_option('viewer_privateKey'));
     }
-
-
+    // Use scrollbar in iframe
+    $use_scrollbar == 'True' ? $use_scrollbar = 'yes' : $use_scrollbar = 'no';
 
 
 	$no_iframe = "If you can see this text, your browser does not support iframes. Please enable iframe support in your browser or use the latest version of any popular web browser such as Mozilla Firefox or Google Chrome. For more help, please check our documentation Wiki: <a href='http://groupdocs.com/docs/display/Viewer/GroupDocs+Viewer+Integration+with+3rd+Party+Platforms'>http://groupdocs.com/docs/display/Viewer/GroupDocs+Viewer+Integration+with+3rd+Party+Platforms</a>";
 
 	if (isset($protocol) && $protocol == 'https') {
-		$code = "https://apps.groupdocs.com/document-viewer/embed/{$file}?quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.2";
+		$code = "https://apps.groupdocs.com/document-viewer/embed/{$file}";
 	} 
 	else {
-		$code = "http://apps.groupdocs.com/document-viewer/embed/{$file}?quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.2";
+		$code = "http://apps.groupdocs.com/document-viewer/embed/{$file}";
 	}
 
     $url = $signer->signUrl($code);
 
         
-    $code = "<iframe src='{$url}' frameborder='0' width='{$width}' height='{$height}'>{$no_iframe}</iframe>";
+    $code = "<iframe src='{$url}&quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.4' frameborder='0' width='{$width}' height='{$height}' scrolling='{$use_scrollbar}'>{$no_iframe}</iframe>";
 
 	return $code;
 }

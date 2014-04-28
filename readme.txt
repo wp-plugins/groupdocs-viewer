@@ -127,6 +127,10 @@ Please see the following guides for each of the available options:
 
 == Changelog ==
 
+= 1.4.4 =
+* Added enabling/disabling scrollbar at iframe
+* Added a selection of quality.
+
 = 1.4.3 =
 * Updated GroupDocs SDK to version 1.8.2
 

@@ -57,6 +57,23 @@ error_reporting(E_ALL | E_STRICT);
                 </td>
             </tr>
             <tr>
+                <td align="right" class="gray dwl_gray"><strong>Quality</strong></td>
+                <td valign="top">
+                    <select name='quality' id='quality'>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>
+                        <option value="80">80</option>
+                        <option value="90">90</option>
+                        <option selected value="100">100</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <td align="right" class="gray dwl_gray"><strong>Choose the protocol</strong></td>
                 <td valign="top"><input type="radio" name="protocol" value="http" checked>http:// <input type="radio"
                                                                                                          name="protocol"
@@ -70,6 +87,7 @@ error_reporting(E_ALL | E_STRICT);
                 <td><strong>Allow Download: </strong><input type="checkbox" name="download" id="download"></td>
                 <td><strong style="margin-left: 20px">Allow print: </strong><input type="checkbox" name='print' id="print"></td>
                 <td><strong style="margin-left: 20px">Text Selection: </strong><input type="checkbox" name="use_pdf" id="use_pdf"></td>
+                <td><strong style="margin-left: 20px">Scrollbar: </strong><input type="checkbox" name="use_scrollbar" id="use_scrollbar"></td>
             </tr>
         </table>
 
@@ -200,9 +218,14 @@ if (!empty($_POST) && !empty($_FILES)) {
         } else {
             $use_pdf = 'False';
         };
+        if (!empty($_POST['use_scrollbar'])) {
+            $use_scrollbar = 'True';
+        } else {
+            $use_scrollbar = 'False';
+        };
 
         echo "<script>
-			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" quality=\"100\" height=\"" . (int)strip_tags(trim($_POST['height'])) . "\" width=\"" . (int)strip_tags(trim($_POST['width'])) . "\" protocol=\"" . $_POST['protocol'] . "\" download=\"" . $download . "\" print=\"" . $print . "\" use_pdf=\"" . $use_pdf . "\"]');
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" quality=\"" .(int)strip_tags(trim($_POST['quality'])) . "\" height=\"" . (int)strip_tags(trim($_POST['height'])) . "\" width=\"" . (int)strip_tags(trim($_POST['width'])) . "\" protocol=\"" . $_POST['protocol'] . "\" download=\"" . $download . "\" print=\"" . $print . "\" use_pdf=\"" . $use_pdf . "\" use_scrollbar=\"" . $use_scrollbar . "\"]');
 			tinyMCEPopup.close();</script>";
         die;
     }

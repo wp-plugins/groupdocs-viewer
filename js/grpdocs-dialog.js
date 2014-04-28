@@ -68,6 +68,13 @@ var GrpdocsInsertDialog = {
         jQuery("input[name='use_pdf']").change(function () {
             update_sc();
         });
+        jQuery("input[name='use_scrollbar']").change(function () {
+            update_sc();
+        });
+        jQuery("#quality").change(function () {
+            update_sc();
+        });
+
 
         function strip_tags(str){
             return str.replace(/<\/?[^>]+>/gi, '');
@@ -81,7 +88,10 @@ var GrpdocsInsertDialog = {
                 shortcode = shortcode + '  file="' + strip_tags(jQuery('#url').val()) + '" quality="100"';
             } else if (jQuery('#url').val() == '') {
                 jQuery('#uri-note').html('');
-                shortcode = shortcode + ' file="" quality="100"';
+                shortcode = shortcode + ' file="" ';
+            }
+            if (( jQuery('#quality').val() != 0 ) & ( jQuery('#quality').val() ) != null) {
+                shortcode = shortcode + '  quality="' + strip_tags(jQuery('#quality').val()) + '"';
             }
 
             if (( jQuery('#height').val() != 0 ) & ( jQuery('#height').val() ) != null) {
@@ -115,6 +125,12 @@ var GrpdocsInsertDialog = {
                 shortcode = shortcode + '  use_pdf="False"';
             }
 
+            if (jQuery("input[name='use_scrollbar']").is(":checked") == true) {
+                shortcode = shortcode + '  use_scrollbar="True"';
+            } else {
+                shortcode = shortcode + '  use_scrollbar="False"';
+            }
+
             if (jQuery("input[@name'save']:checked").val() == '1') {
                 shortcode = shortcode + '  save="1"';
             }
@@ -142,6 +158,7 @@ var GrpdocsInsertDialog = {
             $('#form').submit();
         } else {
             // insert the contents from the input into the document
+            console.log(jQuery('#shortcode').val());
             tinyMCEPopup.editor.execCommand('mceInsertContent', false, jQuery('#shortcode').val());
             tinyMCEPopup.close();
 

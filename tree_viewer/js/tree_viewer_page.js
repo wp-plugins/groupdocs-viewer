@@ -29,6 +29,10 @@ function loadFileTree($) {
                     document.getElementById('insert').disabled = false;
                     self.click(function (e) {
                         e.preventDefault();
+                        if($("a", container).attr('style', 'border')){
+                            $("a", container).removeAttr('style')
+                        }
+                        self.css( 'border', '3px solid red' );
                         var height = parseInt($('#height').val());
                         var width = parseInt($('#width').val());
                         var url = self.attr('rel');
@@ -40,6 +44,11 @@ function loadFileTree($) {
 
                             var download = "False";
                         }
+
+                        if (( jQuery('#quality').val() != 0 ) & ( jQuery('#quality').val() ) != null) {
+                            var quality = jQuery('#quality').val();
+                        }
+
                         if (jQuery("input[name='print']").is(":checked") == true) {
                             var print = "True";
                         } else {
@@ -52,8 +61,14 @@ function loadFileTree($) {
                             var use_pdf = "False";
                         }
 
+                        if (jQuery("input[name='use_scrollbar']").is(":checked") == true) {
+                            var use_scrollbar = "True";
+                        } else {
+                            var use_scrollbar = "False";
+                        }
+
                         var protocol = $("input[@name'protocol']:checked").val()
-                        $('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" quality="100" height="' + height + '" width="' + width + '" protocol="' + protocol + '" download="' + download + '" print="' + print + '" use_pdf="' + use_pdf + '"]');
+                        $('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" quality="' + quality + '" height="' + height + '" width="' + width + '" protocol="' + protocol + '" download="' + download + '" print="' + print + '" use_pdf="' + use_pdf + '" use_scrollbar="' + use_scrollbar + '"]');
                     })
                 }
             });

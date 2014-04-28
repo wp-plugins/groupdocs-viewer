@@ -31,6 +31,7 @@ if (isset ($_POST['login']) && ($_POST['password'])) {
     $result = "";
     //Login and get user data
     $userData = $shared->LoginUser($login, $password);
+
     //Check status
     if ($userData->status == "Ok") {
         //If status Ok get all user data
