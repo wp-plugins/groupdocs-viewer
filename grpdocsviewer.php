@@ -6,7 +6,7 @@ Plugin URI: http://www.groupdocs.com/
 Description: Lets you embed PPT, PPTX, XLS, XLSX, DOC, DOCX, PDF and many other formats from your GroupDocs acount in a web page using the GroupDocs Embedded Viewer (no Flash or PDF browser plug-ins required).
 Author: GroupDocs Team <support@groupdocs.com>
 Author URI: http://www.groupdocs.com/
-Version: 1.4.4
+Version: 1.4.5
 License: GPLv2
 */
 
@@ -39,7 +39,7 @@ function grpdocs_getdocument($atts) {
         $signer = new GroupDocsRequestSigner(get_option('viewer_privateKey'));
     }
     // Use scrollbar in iframe
-    $use_scrollbar == 'True' ? $use_scrollbar = 'yes' : $use_scrollbar = 'no';
+    $use_scrollbar == 'True' ? $use_scrollbar = "scrolling='yes'" : $use_scrollbar = "scrolling='no' style='min-width: {$width}px;min-height: {$height}px'";
 
 
 	$no_iframe = "If you can see this text, your browser does not support iframes. Please enable iframe support in your browser or use the latest version of any popular web browser such as Mozilla Firefox or Google Chrome. For more help, please check our documentation Wiki: <a href='http://groupdocs.com/docs/display/Viewer/GroupDocs+Viewer+Integration+with+3rd+Party+Platforms'>http://groupdocs.com/docs/display/Viewer/GroupDocs+Viewer+Integration+with+3rd+Party+Platforms</a>";
@@ -54,7 +54,7 @@ function grpdocs_getdocument($atts) {
     $url = $signer->signUrl($code);
 
         
-    $code = "<iframe src='{$url}&quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.4' frameborder='0' width='{$width}' height='{$height}' scrolling='{$use_scrollbar}'>{$no_iframe}</iframe>";
+    $code = "<iframe src='{$url}&quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.5' frameborder='0' width='{$width}' height='{$height}' {$use_scrollbar} >{$no_iframe}</iframe>";
 
 	return $code;
 }

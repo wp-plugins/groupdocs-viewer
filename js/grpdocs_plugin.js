@@ -9,7 +9,7 @@
 					height : 560 + parseInt(ed.getLang('grpdocs.delta_height',0)),
 					inline : 1}, {
 						plugin_url : url,
-						some_custom_arg : 'custom arg'
+                        someArg : 'custom arg'
 					}
 				)}
 			);
@@ -18,10 +18,6 @@
 				cmd : 'mceGrpdocs',
 				image : url + '/../images/grpdocs-button.png'
 			});
-			ed.onNodeChange.add
-				(function(ed,cm,n) {
-					cm.setActive('grpdocs',n.nodeName=='IMG')
-				})
 		},
 		createControl : function(n,cm) {
 			return null
@@ -35,5 +31,6 @@
 				version : "1.4.0"}
 		}
 	});
+
 	tinymce.PluginManager.add('grpdocs',tinymce.plugins.GrpdocsPlugin)
 })();

@@ -3,7 +3,7 @@ Contributors: GroupDocs Team
 Tags: groupdocs, groupdocs viewer, document viewer, pdf viewer, pdf viewer plugin, display pdf, embed pdf, embed pdf in wordpress, word, word viewer, word document, embed word, word plugin, doc, doc viewer, docx, docx viewer, excel, excel plugin, xls, xlsx, spreadsheet, embed spreadsheet, powerpoint, powerpoint viewer, ppt, ppt viewer, pptx, image viewer, display image, docm, dot, dotx, dotm, xlsm, xlsb, xml, visio, vsd, vdx, vss, vsx, vst, vtx, vsdx, vdw, mpp, mpt, msg, eml, opendocument, odt, ott, ods, odp, rtf, txt, csv, xps, autocad, cad, dxf, bmp, gif, jpg, png, tiff, epub
 Author URI: http://groupdocs.com
 Requires at least: 2.8
-Tested up to: 3.5.0
+Tested up to: 3.9.0
 Stable tag: trunk
 License: GPLv2 
 
@@ -126,6 +126,10 @@ Please see the following guides for each of the available options:
 </ul>
 
 == Changelog ==
+
+= 1.4.5 =
+* Added style "min-width" and "min-height" to iframe
+* Updated tiny_mce_popup.js to last version
 
 = 1.4.4 =
 * Added enabling/disabling scrollbar at iframe

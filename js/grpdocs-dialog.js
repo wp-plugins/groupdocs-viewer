@@ -158,7 +158,6 @@ var GrpdocsInsertDialog = {
             $('#form').submit();
         } else {
             // insert the contents from the input into the document
-            console.log(jQuery('#shortcode').val());
             tinyMCEPopup.editor.execCommand('mceInsertContent', false, jQuery('#shortcode').val());
             tinyMCEPopup.close();
 
