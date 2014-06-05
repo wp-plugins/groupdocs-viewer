@@ -64,7 +64,7 @@ For detailed installation and usage instructions, please see <a href="http://gro
 
 <h4>Have Questions?</h4>
 
-Please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofollow" target="_blank">contact us</a>!
+Please feel free to <a href="http://groupdocs.com/corporate/contact-us" rel="nofollow" target="_blank">contact us</a>!
 
 == Installation ==
 
@@ -106,7 +106,7 @@ No, documents can only be stored either on our cloud storage, or any of the foll
 
 = Where can I get detailed help? =
 For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a>.
-If you still have questions, please feel free to <a href="http://groupdocs.com/corporate/contact" rel="nofollow" target="_blank">contact us</a>!
+If you still have questions, please feel free to <a href="http://groupdocs.com/corporate/contact-us" rel="nofollow" target="_blank">contact us</a>!
 
 = Are there any specific PHP extensions that should be enabled? =
 Yes, the cURL (extension=php_curl.dll) extension is required to run the viewer.
