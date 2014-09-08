@@ -3,7 +3,7 @@ Contributors: GroupDocs Team
 Tags: groupdocs, groupdocs viewer, document viewer, pdf viewer, pdf viewer plugin, display pdf, embed pdf, embed pdf in wordpress, word, word viewer, word document, embed word, word plugin, doc, doc viewer, docx, docx viewer, excel, excel plugin, xls, xlsx, spreadsheet, embed spreadsheet, powerpoint, powerpoint viewer, ppt, ppt viewer, pptx, image viewer, display image, docm, dot, dotx, dotm, xlsm, xlsb, xml, visio, vsd, vdx, vss, vsx, vst, vtx, vsdx, vdw, mpp, mpt, msg, eml, opendocument, odt, ott, ods, odp, rtf, txt, csv, xps, autocad, cad, dxf, bmp, gif, jpg, png, tiff, epub
 Author URI: http://groupdocs.com
 Requires at least: 2.8
-Tested up to: 3.9.0
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 
 
@@ -189,30 +189,3 @@ Please see the following guides for each of the available options:
 = 1.3.3 =
 * Updated titles.
 * Fix the bug of repeating error message when no private or client keys.
-
-= 1.3.2 =
-* Fixed "Paste link" tab - renamed to "Paste GUID".
-* Cleaned code.
-
-= 1.3.1 =
-* Fixed bug with upload file's shortcode.
-* Fixed bug with reload link.
-
-= 1.3.0 =
-* New tree viewer.
-
-= 1.2.2 =
-* New tabs view.
-
-= 1.2.1 =
-* Updated compatibility, and tags.
-
-= 1.2 = 
-* Fixed a bug relating to url encoding in the file variable.
-* Fixed issue relating to security warning in Chrome.
- 
-= 1.1 = 
-* Fixed 2 path related bugs.
-
-= 1.0 =
-* Initial release.
