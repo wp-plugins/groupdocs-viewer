@@ -1,4 +1,4 @@
-=== GroupDocs PDF Viewer Plugin for WordPress ===
+=== GroupDocs.Viewer for Cloud ===
 Contributors: GroupDocs Team
 Tags: groupdocs, groupdocs viewer, document viewer, pdf viewer, pdf viewer plugin, display pdf, embed pdf, embed pdf in wordpress, word, word viewer, word document, embed word, word plugin, doc, doc viewer, docx, docx viewer, excel, excel plugin, xls, xlsx, spreadsheet, embed spreadsheet, powerpoint, powerpoint viewer, ppt, ppt viewer, pptx, image viewer, display image, docm, dot, dotx, dotm, xlsm, xlsb, xml, visio, vsd, vdx, vss, vsx, vst, vtx, vsdx, vdw, mpp, mpt, msg, eml, opendocument, odt, ott, ods, odp, rtf, txt, csv, xps, autocad, cad, dxf, bmp, gif, jpg, png, tiff, epub
 Author URI: http://groupdocs.com
@@ -17,19 +17,19 @@ Seamlessly embed and display PDF, Microsoft Word, Excel and PowerPoint documents
 
 GroupDocs PDF viewer plugin enables you to easily embed and display PDF and Microsoft Office documents right on your WordPress website. The viewer doesn't require Adobe Reader, Flash or other browser plugins and comes with a convenient user interface for easy navigation when viewing multi-page documents.
 
-<strong>Please note:</strong> this plugin is developed using the GroupDocs Viewer for Cloud API, which means that all documents are stored and processed on GroupDocs' cloud storage. You cannot store documents locally with this plugin. However, in addition to GroupDocs' cloud storage, you can use any of the following 3rd party storage providers: Dropbox, Amazon S3, Box, Windows Azure and Google Cloud.
+<strong>Please note:</strong> this plugin is developed using the GroupDocs.Viewer for Cloud API, which means that all documents are stored and processed on GroupDocs' cloud storage. You cannot store documents locally with this plugin. However, in addition to GroupDocs' cloud storage, you can use any of the following 3rd party storage providers: Dropbox, Amazon S3, Box, Windows Azure and Google Cloud.
 
-<strong>Before installing the plugin:</strong> please be aware that the GroupDocs Viewer for Cloud API is a paid service and you will have to register with us. We offer a free 14-day trial as well as a free, restricted, plan. For more details, please <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">see all plans</a> available.
+<strong>Before installing the plugin:</strong> please be aware that the GroupDocs.Viewer for Cloud API is a paid service and you will have to register with us. We offer a free 14-day trial as well as a free, restricted, plan. For more details, please <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">see all plans</a> available.
 
-<h4>Key Benefits of the GroupDocs PDF Viewer Plugin</h4>
+<h4>Key Benefits of the GroupDocs.Viewer for Cloud Plugin</h4>
 
-1. <strong>Native text rendering.</strong> GroupDocs Viewer doesn't rasterize documents, but converts them to a combination of HTML, CSS and SVG. As a result, embedded documents are rendered as real text files, not images. This allows users, for example, to select and copy text to the clipboard right from the document embedded on your website.
+1. <strong>Native text rendering.</strong> GroupDocs.Viewer doesn't rasterize documents, but converts them to a combination of HTML, CSS and SVG. As a result, embedded documents are rendered as real text files, not images. This allows users, for example, to select and copy text to the clipboard right from the document embedded on your website.
 
 2. <strong>No 3rd party software required.</strong> With the GroupDocs PDF viewer, users don't have to install Acrobat Reader, Flash or any other browser plugins - you just embed a document to a webpage and users can view it right away.
 
 3. <strong>Unmatched display quality.</strong> Thanks to font extraction and true text rendering, you can embed documents to just about any page size without loss of display quality. Documents are zoomable and text always looks clear and sharp.
 
-4. <strong>Cross-browser compatibility.</strong> GroupDocs Viewer is mobile-ready and works with all browsers that support HTML5, including: IE8+, Chrome, Chrome for Android, Firefox, Firefox for Android, Opera, Opera Mini, Opera for Android, Safari 5+, and Mobile Safari.
+4. <strong>Cross-browser compatibility.</strong> GroupDocs.Viewer is mobile-ready and works with all browsers that support HTML5, including: IE8+, Chrome, Chrome for Android, Firefox, Firefox for Android, Opera, Opera Mini, Opera for Android, Safari 5+, and Mobile Safari.
 
 5. <strong>Convenient UI.</strong> The PDF viewer plugin comes with a convenient interface, which allows users to easily browse embedded documents on your website. For example, users can scroll multipage documents or turn pages with a click of a button; jump straight to a specified page; preview pages with thumbnails; search for text within a document using keywords; zoom, print and download documents right from a web-browser. And if you don't want users to be able to copy your documents, you can easily restrict options for printing/downloading and text coping.
 
@@ -68,9 +68,9 @@ Please feel free to <a href="http://groupdocs.com/corporate/contact-us" rel="nof
 
 == Installation ==
 
-<strong>Before installing the plugin:</strong> Please be aware that the GroupDocs Viewer for Cloud API is a paid service and you will have to register with us. We offer a free 14-day trial as well as a free, restricted, plan. For more details, please <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">see all plans</a> available.
+<strong>Before installing the plugin:</strong> Please be aware that the GroupDocs.Viewer for Cloud API is a paid service and you will have to register with us. We offer a free 14-day trial as well as a free, restricted, plan. For more details, please <a href=" http://groupdocs.com/purchase/api-pricing" rel="nofollow" target="_blank">see all plans</a> available.
 
-<strong>A note about storage options:</strong> This plugin is developed with the GroupDocs Viewer for Cloud API, which means that all documents are stored and processed on GroupDocs' cloud storage. You cannot store documents locally with this plugin. However, in addition to GroupDocs' cloud storage, you can use any of the following 3rd party storage providers: Dropbox, Amazon S3, Box, Windows Azure and Google Cloud.
+<strong>A note about storage options:</strong> This plugin is developed with the GroupDocs.Viewer for Cloud API, which means that all documents are stored and processed on GroupDocs' cloud storage. You cannot store documents locally with this plugin. However, in addition to GroupDocs' cloud storage, you can use any of the following 3rd party storage providers: Dropbox, Amazon S3, Box, Windows Azure and Google Cloud.
 
 <strong>For detailed installation and usage instructions, please see <a href="http://groupdocs.com/docs/display/Viewer/Integrating+GroupDocs+Viewer+Plugin+with+WordPress" target="_blank">plugin's documentation page</a></strong>.
 
@@ -86,7 +86,7 @@ Also, the following are instructions on how to use 3rd party cloud storage provi
 == Screenshots ==
 
 1. Here's a screenshot of how to get your document link for insertion into the GroupDocs Viewer Embedder dialog
-2. Here's a screenshot of the GroupDocs Viewer Embedder in a Wordpress blog
+2. Here's a screenshot of the GroupDocs.Viewer for Cloud in a Wordpress blog
 
 
 == Frequently Asked Questions ==
