@@ -127,6 +127,9 @@ Please see the following guides for each of the available options:
 
 == Changelog ==
 
+= 1.4.6 =
+* Added enabling/disabling fullscreen using
+
 = 1.4.5 =
 * Added style "min-width" and "min-height" to iframe
 * Updated tiny_mce_popup.js to last version

@@ -87,13 +87,17 @@ error_reporting(E_ALL | E_STRICT);
                 </td>
             </tr>
 
+
         </table>
         <table>
             <tr>
-                <td><strong>Allow Download: </strong><input type="checkbox" name="download" id="download"></td>
-                <td><strong style="margin-left: 20px">Allow print: </strong><input type="checkbox" name='print' id="print"></td>
-                <td><strong style="margin-left: 20px">Text Selection: </strong><input type="checkbox" name="use_pdf" id="use_pdf"></td>
-                <td><strong style="margin-left: 20px">Scrollbar: </strong><input type="checkbox" name="use_scrollbar" id="use_scrollbar"></td>
+                <td align="right"><strong>Allow Fullscreen: </strong><input type="checkbox" name="fullscreen" id="fullscreen"></td>
+                <td align="right"><strong>Allow Download: </strong><input type="checkbox" name="download" id="download"></td>
+                <td align="right"><strong style="margin-left: 20px">Allow print: </strong><input type="checkbox" name='print' id="print"></td>
+            </tr>
+            <tr>
+                <td align="right"><strong style="margin-left: 20px">Text Selection: </strong><input type="checkbox" name="use_pdf" id="use_pdf"></td>
+                <td align="right"><strong style="margin-left: 20px">Scrollbar: </strong><input type="checkbox" name="use_scrollbar" id="use_scrollbar"></td>
             </tr>
         </table>
 
@@ -208,7 +212,7 @@ if (!empty($_POST) && !empty($_FILES)) {
         $api = new StorageApi($apiClient);
 
         $result = $api->Upload(strip_tags(trim($_POST['userId'])), $name, 'uploaded', null, $fs);
-        
+
         if (!empty($_POST['download'])) {
             $download = 'True';
         } else {
@@ -229,9 +233,14 @@ if (!empty($_POST) && !empty($_FILES)) {
         } else {
             $use_scrollbar = 'False';
         };
+        if (!empty($_POST['fullscreen'])) {
+            $fullscreen = 'True';
+        } else {
+            $fullscreen = 'False';
+        };
 
         echo "<script>
-			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" quality=\"" .(int)strip_tags(trim($_POST['quality'])) . "\" height=\"" . (int)strip_tags(trim($_POST['height'])) . "\" width=\"" . (int)strip_tags(trim($_POST['width'])) . "\" protocol=\"" . $_POST['protocol'] . "\" download=\"" . $download . "\" print=\"" . $print . "\" use_pdf=\"" . $use_pdf . "\" use_scrollbar=\"" . $use_scrollbar . "\"]');
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '[grpdocsview file=\"" . @$result->result->guid . "\" quality=\"" .(int)strip_tags(trim($_POST['quality'])) . "\" height=\"" . (int)strip_tags(trim($_POST['height'])) . "\" width=\"" . (int)strip_tags(trim($_POST['width'])) . "\" protocol=\"" . $_POST['protocol'] . "\" fullscreen=\"" . $fullscreen . "\" download=\"" . $download . "\" print=\"" . $print . "\" use_pdf=\"" . $use_pdf . "\" use_scrollbar=\"" . $use_scrollbar . "\"]');
 			tinyMCEPopup.close();</script>";
         die;
     }

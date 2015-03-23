@@ -6,7 +6,7 @@ Plugin URI: http://www.groupdocs.com/
 Description: Lets you embed PPT, PPTX, XLS, XLSX, DOC, DOCX, PDF and many other formats from your GroupDocs acount in a web page using the GroupDocs Embedded Viewer (no Flash or PDF browser plug-ins required).
 Author: GroupDocs Team <support@groupdocs.com>
 Author URI: http://www.groupdocs.com/
-Version: 1.4.5
+Version: 1.4.6
 License: GPLv2
 */
 
@@ -20,6 +20,7 @@ function grpdocs_getdocument($atts) {
 		'width' => '',
 		'height' => '',
 		'protocol' => '',
+        'fullscreen' => '',
         'download' => '',
         'print' => '',
         'use_pdf' => '',
@@ -52,16 +53,22 @@ function grpdocs_getdocument($atts) {
 	}
 
     $url = $signer->signUrl($code);
+    $button = '';
+    if($fullscreen == "True"){
+        wp_enqueue_script('grpdocs-fullscreen', plugins_url('js/groupdocs-fullscreen.js', __FILE__),array('jquery'));
+        $button = '<input type="button" value="Fullscreen" onClick="jQuery(document).fullScreen(true)"></input>';
+    }
 
-        
-    $code = "<iframe src='{$url}&quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.5' frameborder='0' width='{$width}' height='{$height}' {$use_scrollbar} >{$no_iframe}</iframe>";
-
-	return $code;
+    $code = "<iframe id='gd_viewer' src='{$url}&quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.6' frameborder='0' width='{$width}' height='{$height}' {$use_scrollbar} webkitAllowFullScreen mozallowfullscreen allowFullScreen  >{$no_iframe}</iframe>";
+ 	return $button . $code;
 }
-
+function gd_script() {
+    wp_enqueue_script('grpdocs-fullscreen', plugins_url('js/jquery.fullscreen.js', __FILE__),array('jquery'));
+}
 //activate shortcode
 add_shortcode('grpdocsview', 'grpdocs_getdocument');
 
+//add_action( 'wp_enqueue_scripts', 'gd_script' );
 
 // editor integration
 

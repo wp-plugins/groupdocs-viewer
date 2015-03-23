@@ -66,9 +66,14 @@ function loadFileTree($) {
                         } else {
                             var use_scrollbar = "False";
                         }
+                        if (jQuery("input[name='fullscreen']").is(":checked") == true) {
+                            var fullscreen = "True";
+                        } else {
+                            var fullscreen = "False";
+                        }
 
                         var protocol = $("input[@name'protocol']:checked").val()
-                        $('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" quality="' + quality + '" height="' + height + '" width="' + width + '" protocol="' + protocol + '" download="' + download + '" print="' + print + '" use_pdf="' + use_pdf + '" use_scrollbar="' + use_scrollbar + '"]');
+                        $('#shortcode').val('[grpdocsview file="' + self.attr('rel') + '" quality="' + quality + '" height="' + height + '" width="' + width + '" protocol="' + protocol + '" fullscreen="' + fullscreen + '" download="' + download + '" print="' + print + '" use_pdf="' + use_pdf + '" use_scrollbar="' + use_scrollbar + '"]');
                     })
                 }
             });

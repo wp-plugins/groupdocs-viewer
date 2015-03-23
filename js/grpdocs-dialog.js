@@ -56,7 +56,9 @@ var GrpdocsInsertDialog = {
         });
         jQuery("input[name='protocol']").change(function () {
             update_sc();
-            console.log(jQuery(":checkbox[@name'download']:checked").val())
+        });
+        jQuery("input[name='fullscreen']").change(function () {
+            update_sc();
         });
         jQuery("input[name='download']").change(function () {
 
@@ -104,6 +106,13 @@ var GrpdocsInsertDialog = {
             if (jQuery("input[@name'protocol']:checked").val()) {
 
                 shortcode = shortcode + '  protocol="' + jQuery('input[@name\'protocol\']:checked').val() + '"';
+            }
+            if (jQuery("input[name='fullscreen']").is(":checked") == true) {
+
+                shortcode = shortcode + '  fullscreen="True"';
+            } else {
+
+                shortcode = shortcode + '  fullscreen="False"';
             }
 
             if (jQuery("input[name='download']").is(":checked") == true) {
