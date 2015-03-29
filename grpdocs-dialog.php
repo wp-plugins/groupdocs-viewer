@@ -211,7 +211,7 @@ if (!empty($_POST) && !empty($_FILES)) {
         $apiClient = new APIClient($signer);
         $api = new StorageApi($apiClient);
 
-        $result = $api->Upload(strip_tags(trim($_POST['userId'])), $name, 'uploaded', null, $fs);
+        $result = $api->Upload(strip_tags(trim($_POST['userId'])), $name, 'uploaded', null, null, $fs);
 
         if (!empty($_POST['download'])) {
             $download = 'True';

@@ -6,7 +6,7 @@ Plugin URI: http://www.groupdocs.com/
 Description: Lets you embed PPT, PPTX, XLS, XLSX, DOC, DOCX, PDF and many other formats from your GroupDocs acount in a web page using the GroupDocs Embedded Viewer (no Flash or PDF browser plug-ins required).
 Author: GroupDocs Team <support@groupdocs.com>
 Author URI: http://www.groupdocs.com/
-Version: 1.4.6
+Version: 1.4.7
 License: GPLv2
 */
 
@@ -59,7 +59,7 @@ function grpdocs_getdocument($atts) {
         $button = '<input type="button" value="Fullscreen" onClick="jQuery(document).fullScreen(true)"></input>';
     }
 
-    $code = "<iframe id='gd_viewer' src='{$url}&quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.6' frameborder='0' width='{$width}' height='{$height}' {$use_scrollbar} webkitAllowFullScreen mozallowfullscreen allowFullScreen  >{$no_iframe}</iframe>";
+    $code = "<iframe id='gd_viewer' src='{$url}&quality={$quality}&use_pdf={$use_pdf}&download={$download}&print={$print}&referer=wordpress-viewer/1.4.7' frameborder='0' width='{$width}' height='{$height}' {$use_scrollbar} webkitAllowFullScreen mozallowfullscreen allowFullScreen  >{$no_iframe}</iframe>";
  	return $button . $code;
 }
 function gd_script() {

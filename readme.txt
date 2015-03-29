@@ -127,6 +127,9 @@ Please see the following guides for each of the available options:
 
 == Changelog ==
 
+= 1.4.7 =
+* Updated GroupDocs SDK version in the plugin
+
 = 1.4.6 =
 * Added enabling/disabling fullscreen using
 
